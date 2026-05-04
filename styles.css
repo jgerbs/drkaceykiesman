@@ -149,6 +149,12 @@ h3 {
     backdrop-filter: blur(10px);
 }
 
+@media (max-width: 768px) {
+    .site-header {
+        position: relative;
+    }
+}
+
 .header-inner {
     max-width: var(--max-w);
     margin: auto;
@@ -194,11 +200,29 @@ h3 {
     font-weight: 400;
     color: var(--text-mid);
     letter-spacing: 0.01em;
-    transition: color 0.2s;
+    position: relative;
+    transition: color 0.22s var(--ease);
 }
 
-.main-nav a:hover {
-    color: var(--text-dark);
+.main-nav a:not(.nav-book)::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--brown);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s var(--ease);
+}
+
+.main-nav a:not(.nav-book):hover {
+    color: var(--brown);
+}
+
+.main-nav a:not(.nav-book):hover::after {
+    transform: scaleX(1);
 }
 
 .nav-book {
@@ -269,7 +293,7 @@ h3 {
     line-height: 1.05;
     letter-spacing: -0.025em;
     margin-bottom: 26px;
-    color: var(--cream);
+    color: var(--ivory);
 }
 
 .hero-title em {
@@ -280,7 +304,7 @@ h3 {
 .hero-text {
     font-size: 0.95rem;
     font-weight: 300;
-    color: var(--cream);
+    color: var(--ivory);
     max-width: 420px;
     margin-bottom: 36px;
     line-height: 1.75;
@@ -289,19 +313,21 @@ h3 {
 .hero-btn {
     display: inline-block;
     padding: 13px 28px;
-    background: var(--cream);
+    background: var(--ivory);
     color: var(--text-dark);
     font-family: var(--font-body);
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.04em;
     border-radius: 999px;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.28s var(--ease), color 0.28s var(--ease), transform 0.22s var(--ease), box-shadow 0.28s var(--ease);
 }
 
 .hero-btn:hover {
-    background: var(--cream);
-    color: var(--brown);
+    background: var(--brown);
+    color: var(--cream);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(109, 101, 91, 0.38);
 }
 
 /* ================= ABOUT ================= */
@@ -872,18 +898,26 @@ h3 {
     }
 }
 
-/* --- Compact: 700px — scale down about text so it still fits side-by-side --- */
+/* --- Compact: 700px --- */
 @media (max-width: 700px) {
-    .about-inner {
+    .about-inner,
+    .about-inner--flip {
+        grid-template-columns: 1fr;
         gap: 24px;
     }
 
+    .about-image {
+        aspect-ratio: 1;
+    }
+
     .about-heading {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        margin-bottom: 14px;
     }
 
     .about-body {
-        font-size: 0.88rem;
+        font-size: 0.9rem;
+        line-height: 1.7;
     }
 }
 
@@ -893,27 +927,29 @@ h3 {
         font-size: 2.3rem;
     }
 
-    /* ABOUT: tightest gap, squarer image, compact text */
+    /* ABOUT */
     .about {
         padding: 56px 16px;
     }
 
     .about-inner {
-        gap: 14px;
+        gap: 20px;
     }
 
     .about-image {
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 1;
+        border-radius: 12px;
     }
+    
 
     .about-heading {
-        font-size: 1.1rem;
-        line-height: 1.3;
+        font-size: 1.5rem;
+        line-height: 1.25;
     }
 
     .about-body {
-        font-size: 0.82rem;
-        line-height: 1.65;
+        font-size: 0.9rem;
+        line-height: 1.7;
     }
 
     /* SERVICES: keep 2-col */
