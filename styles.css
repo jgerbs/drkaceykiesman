@@ -1857,3 +1857,26 @@ h3 {
         padding: 20px 0;
     }
 }
+
+
+@media (max-width: 768px) {
+    .main-nav {
+        gap: 14px;
+        /* tighter spacing between links */
+        flex-wrap: nowrap;
+        /* prevent wrapping to new line */
+    }
+
+    .main-nav a {
+        font-size: 0.75rem;
+        /* slightly smaller links */
+    }
+
+    .nav-book {
+        padding: 6px 12px;
+        /* smaller button */
+        font-size: 0.68rem !important;
+        white-space: nowrap;
+        /* prevents "Book a Visit" breaking */
+    }
+}
