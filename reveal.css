@@ -2,28 +2,29 @@
    Staggered scroll-reveal system
    Usage:
      Container  → data-reveal-group
-     Children   → data-reveal  (JS adds .reveal)
+     Children   → data-reveal
      Animated   → .is-visible  (JS toggles in)
 
-   To use on any page: link reveal.css + reveal.js,
-   mark elements with data-reveal-group / data-reveal.
+   Elements are hidden via CSS from first paint
+   (stylesheet is in <head>), so there is no
+   flash of visible → hidden → animated content.
    ============================================== */
 
-.reveal {
+[data-reveal] {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     will-change: opacity, transform;
 }
 
-.reveal.is-visible {
+[data-reveal].is-visible {
     opacity: 1;
     transform: translateY(0);
     will-change: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .reveal {
+    [data-reveal] {
         opacity: 1;
         transform: none;
         transition: none;
