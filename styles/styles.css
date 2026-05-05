@@ -255,7 +255,7 @@ h3 {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: url("images/hero.jpg") center/cover no-repeat;
+    background: url("/images/hero.jpg") center/cover no-repeat;
     z-index: 0;
 }
 
@@ -554,11 +554,7 @@ h3 {
 .marquee-track {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 32s linear infinite;
-}
-
-.marquee-track:hover {
-    animation-play-state: paused;
+    animation: marquee-scroll 25s linear infinite;
 }
 
 .marquee-set {
@@ -763,6 +759,7 @@ h3 {
     color: rgba(255, 255, 255, 0.32);
     font-weight: 400;
     margin-bottom: 28px;
+    white-space: nowrap;
 }
 
 .footer-instagram {
@@ -795,6 +792,22 @@ h3 {
 
 .footer-instagram:hover .footer-instagram-icon {
     border-color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+    .footer-socials {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
 
 /* — Column headings — */
@@ -1488,16 +1501,36 @@ h3 {
 
 @media (max-width: 760px) {
     .contact-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        grid-template-columns: 180px 1fr;
+        gap: 24px;
     }
 
     .contact-info {
         position: static;
     }
 
+    .contact-detail {
+        flex-direction: column;
+        gap: 4px;
+    }
+
     .form-row--2col {
         grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-inner {
+        grid-template-columns: 130px 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 380px) {
+    .contact-inner {
+        grid-template-columns: 110px 1fr;
+        gap: 12px;
     }
 }
 
@@ -2057,7 +2090,21 @@ h3 {
 
 @media (max-width: 500px) {
     .morph-option-body .injectables-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .morph-option-body .injectable-card {
+        padding: 16px 12px;
+    }
+
+    .morph-option-body .injectable-price {
+        font-size: 1.5rem;
+    }
+
+    .morph-option-body .injectable-book {
+        padding: 10px 12px;
+        font-size: 0.62rem;
     }
 
     .morph-option-summary {

@@ -53,6 +53,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// --- ACCORDION CARD STAGGER ---
+document.querySelectorAll('.morph-option-group').forEach(details => {
+    details.addEventListener('toggle', () => {
+        if (!details.open) return;
+        const cards = details.querySelectorAll('.injectable-card');
+        cards.forEach((card, i) => {
+            card.style.transition = 'none';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(14px)';
+            requestAnimationFrame(() => requestAnimationFrame(() => {
+                card.style.transition = `opacity 0.38s ease ${i * 0.055}s, transform 0.38s ease ${i * 0.055}s`;
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }));
+        });
+    });
+});
+
 // --- BACK TO TOP ---
 document.querySelectorAll('.back-to-top').forEach(btn => {
     btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
