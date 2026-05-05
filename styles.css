@@ -1501,6 +1501,31 @@ h3 {
     }
 }
 
+/* ================= FORM ERRORS ================= */
+
+.field-error {
+    border-bottom-color: #c94b4b !important;
+}
+
+/* subtle glow */
+.field-error:focus {
+    border-bottom-color: #c94b4b;
+    box-shadow: 0 6px 12px -8px rgba(201, 75, 75, 0.4);
+}
+
+/* optional: label color change */
+.field-error+label,
+.form-field:has(.field-error) label {
+    color: #c94b4b;
+}
+
+/* error message (future if you add text) */
+.form-error-text {
+    font-size: 0.7rem;
+    color: #c94b4b;
+    margin-top: 4px;
+}
+
 /* ================= PAGE HERO ACTIONS ================= */
 .page-hero-actions {
     display: flex;
