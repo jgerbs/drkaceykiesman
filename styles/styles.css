@@ -1988,6 +1988,173 @@ h3 {
     }
 }
 
+/* ================= SERVICE FEATURE ROWS ================= */
+.svc-row {
+    background: var(--cream);
+    padding: clamp(80px, 10vw, 140px) clamp(16px, 4vw, 64px);
+}
+
+.svc-row--alt {
+    background: var(--ivory);
+}
+
+.svc-row-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(48px, 7vw, 120px);
+    align-items: center;
+}
+
+/* --- CONTROL IMAGE SIZE + SHAPE --- */
+.svc-row-media {
+    display: flex;
+    justify-content: center;
+    /* keeps it elegant */
+}
+
+.svc-media-image {
+    width: 100%;
+    max-width: clamp(400px, 28vw, 580px);
+    /* 👈 key fix */
+    aspect-ratio: 4/4;
+    /* 👈 vertical shape */
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.4s var(--ease);
+}
+
+.svc-media-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--beige);
+    border-radius: 18px;
+}
+
+.svc-media-placeholder img,
+.svc-media-placeholder video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.svc-row-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: clamp(30px, 5vw, 40px);
+}
+
+.svc-row-content h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.2vw, 3.8rem);
+    font-weight: 400;
+    color: var(--text-dark);
+    line-height: 1.12;
+    margin: 12px 0 20px;
+}
+
+.svc-row-content > p {
+    font-size: clamp(0.9rem, 1.05vw, 1.05rem);
+    color: var(--text-mid);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 36px;
+    max-width: 520px;
+}
+
+.svc-row-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Tablet: tighten spacing, keep L/R */
+@media (max-width: 900px) {
+    .svc-row {
+        padding: 60px clamp(16px, 4vw, 40px);
+    }
+
+    .svc-row-inner {
+        gap: clamp(24px, 4vw, 52px);
+    }
+}
+
+/* Mobile: compressed L/R — square media, smaller type, stacked buttons */
+@media (max-width: 640px) {
+    .svc-row {
+        padding: 48px 20px;
+    }
+
+    .svc-row-inner {
+        gap: 16px;
+        align-items: start;
+    }
+
+    .svc-media-placeholder {
+        aspect-ratio: 1 / 1;
+    }
+
+    .svc-row-content h2 {
+        font-size: 1.25rem;
+        margin: 6px 0 10px;
+    }
+
+    .svc-row-content > p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        margin-bottom: 16px;
+        max-width: none;
+    }
+
+    .svc-row-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .svc-row-actions .services-cta-btn {
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 10px 16px;
+    }
+}
+
+/* Very small phones only: stack */
+@media (max-width: 400px) {
+    .svc-row-inner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .svc-row-inner--flip .svc-row-media {
+        order: -1;
+    }
+
+    .svc-media-placeholder {
+        aspect-ratio: 4 / 3;
+    }
+
+    .svc-row-content h2 {
+        font-size: 1.7rem;
+        margin: 10px 0 14px;
+    }
+
+    .svc-row-content > p {
+        font-size: 0.88rem;
+        margin-bottom: 22px;
+    }
+
+    .svc-row-actions {
+        flex-direction: row;
+    }
+
+    .svc-row-actions .services-cta-btn {
+        font-size: 0.78rem;
+        padding: 12px 22px;
+    }
+}
+
 /* ================= MORPHEUS8 OPTION ACCORDION ================= */
 .morph-options {
     display: flex;
