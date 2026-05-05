@@ -2081,11 +2081,20 @@ h3 {
     }
 }
 
-/* Mobile: compressed L/R — square media, smaller type, stacked buttons */
-@media (max-width: 640px) {
+@media (max-width: 850px) {
     .svc-row {
         padding: 48px 20px;
     }
+
+    .svc-row-actions .services-cta-btn {
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 10px 16px;
+    }
+}
+
+/* Mobile: compressed L/R — square media, smaller type, stacked buttons */
+@media (max-width: 640px) {
 
     .svc-row-inner {
         gap: 16px;
@@ -2113,15 +2122,11 @@ h3 {
         gap: 8px;
     }
 
-    .svc-row-actions .services-cta-btn {
-        text-align: center;
-        font-size: 0.7rem;
-        padding: 10px 16px;
-    }
 }
 
+
 /* Very small phones only: stack */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .svc-row-inner {
         grid-template-columns: 1fr;
         gap: 20px;
