@@ -715,8 +715,7 @@ h3 {
     position: relative;
     background: var(--brown);
     color: var(--ivory);
-    padding: 120px 40px 40px;
-    /* extra top padding for wave */
+    padding: 120px 40px 0;
 }
 
 /* Ivory melts into brown (top of footer) */
@@ -733,78 +732,188 @@ h3 {
 
 .footer-inner {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr 0.9fr 1.8fr 0.8fr;
+    gap: 56px 48px;
     max-width: var(--max-w);
-    margin: 0 auto 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    padding-bottom: 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
+.footer-inner > * {
+    min-width: 0;
+}
+
+/* — Brand column — */
 .footer-name {
     font-family: var(--font-display);
-    font-size: 1.6rem;
+    font-style: italic;
+    font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: -0.02em;
     color: var(--cream);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    line-height: 1.1;
 }
 
 .footer-sub {
-    font-size: 0.65rem;
-    letter-spacing: 0.13em;
+    font-size: 0.6rem;
+    letter-spacing: 0.17em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.32);
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
-.footer-tagline {
-    font-size: 0.88rem;
-    color: rgba(255, 255, 255, 0.5);
+.footer-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.78rem;
     font-weight: 300;
-    line-height: 1.55;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: color 0.25s;
 }
 
-.footer h3 {
-    font-family: var(--font-body);
-    font-size: 0.65rem;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
-    margin-bottom: 18px;
-}
-
-.footer p {
-    font-size: 0.86rem;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 8px;
-    font-weight: 300;
-}
-
-.footer a {
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
-    margin-bottom: 10px;
-    font-size: 0.86rem;
-    font-weight: 300;
-    transition: color 0.2s;
-}
-
-.footer a:hover {
+.footer-instagram:hover {
     color: var(--cream);
 }
 
+.footer-instagram-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: border-color 0.25s;
+}
+
+.footer-instagram:hover .footer-instagram-icon {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* — Column headings — */
+.footer h3 {
+    font-family: var(--font-body);
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 20px;
+}
+
+/* — Contact column — */
+.footer-contact p,
+.footer-contact a {
+    font-size: 0.84rem;
+    color: rgba(255, 255, 255, 0.48);
+    margin-bottom: 5px;
+    font-weight: 300;
+    line-height: 1.65;
+    display: block;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+    color: var(--cream);
+}
+
+/* — Quick Booking pills — */
+.footer-book-pills {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+}
+
+.footer-pill {
+    display: block;
+    padding: 6px 10px;
+    border: 1px solid rgba(242, 237, 226, 0.28);
+    border-radius: 100px;
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    color: rgba(242, 237, 226, 0.58);
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    background: rgba(242, 237, 226, 0.04);
+    transition: background 0.22s, border-color 0.22s, color 0.22s;
+}
+
+.footer-pill:hover {
+    background: rgba(242, 237, 226, 0.1);
+    border-color: rgba(242, 237, 226, 0.55);
+    color: var(--cream);
+}
+
+/* — Pages nav column — */
+.footer-nav {
+    text-align: right;
+}
+
+.footer-nav a {
+    display: block;
+    font-size: 0.84rem;
+    color: rgba(255, 255, 255, 0.48);
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: var(--cream);
+}
+
+/* — Bottom bar — */
 .footer-bottom {
     max-width: var(--max-w);
     margin: 0 auto;
+    padding: 22px 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .footer-bottom p {
-    font-size: 0.72rem;
-    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.68rem;
+    color: rgba(255, 255, 255, 0.18);
     font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* — Back to top — */
+.back-to-top {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.36);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: border-color 0.22s, color 0.22s, background 0.22s;
+}
+
+.back-to-top:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--cream);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 /* ================= RESPONSIVE ================= */
@@ -889,12 +998,31 @@ h3 {
     }
 
     .footer {
-        padding: 60px 20px 36px;
+        padding: 80px 24px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 32px;
     }
 
-    .footer-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
+    .footer-inner > *:nth-child(even) {
+        text-align: right;
+    }
+}
+
+/* --- Pills: shrink to 2 cols when footer columns get narrow --- */
+@media (max-width: 600px) {
+    .footer-book-pills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-pill {
+        font-size: 0.7rem;
+        letter-spacing: 0.02em;
+        padding: 5px 8px;
     }
 }
 
@@ -989,6 +1117,19 @@ h3 {
 
     .location {
         padding: 56px 16px;
+    }
+
+    .footer-name {
+        font-size: 2rem;
+    }
+}
+
+/* --- Very small phones: tighten pill text --- */
+@media (max-width: 400px) {
+    .footer-pill {
+        font-size: 0.66rem;
+        letter-spacing: 0.01em;
+        padding: 5px 6px;
     }
 }
 

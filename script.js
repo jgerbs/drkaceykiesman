@@ -53,6 +53,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// --- BACK TO TOP ---
+document.querySelectorAll('.back-to-top').forEach(btn => {
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+});
+
 // --- MARQUEE: pause on reduced motion preference ---
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const track = document.querySelector('.marquee-track');
