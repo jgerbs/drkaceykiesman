@@ -255,7 +255,7 @@ h3 {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: url("/images/pexels-felix-mittermeier-1080401.jpg") center/cover no-repeat;
+    background: url("/images/roots.jpg") center/cover no-repeat;
     z-index: 0;
 }
 
