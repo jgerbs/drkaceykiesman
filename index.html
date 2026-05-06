@@ -46,6 +46,7 @@
 
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/reveal.css" />
+    <link rel="preload" as="image" href="/images/roots.webp">
 </head>
 
 <body>
@@ -74,7 +75,7 @@
 
     <!-- ================= HERO ================= -->
     <section class="hero">
-        <div class="hero-bg"></div>
+        <img src="/images/roots.webp" alt="" class="hero-bg-img" loading="eager" fetchpriority="high">
 
         <div class="hero-content" data-reveal-group>
             <p class="hero-eyebrow" data-reveal>Naturopathic Medicine · Kelowna, BC</p>
@@ -99,7 +100,7 @@
         <div class="about-inner" data-reveal-group>
 
             <div class="about-image" data-reveal>
-                <img src="images/kacey.webp" alt="Dr Kacey Kiesman">
+                <img src="images/kacey.webp" alt="Dr Kacey Kiesman" loading="lazy">
             </div>
 
             <div class="about-text" data-reveal>
@@ -150,7 +151,7 @@
             </div>
 
             <div class="about-image" data-reveal>
-                <img src="images/rupert.webp" alt="Prince Rupert, BC">
+                <img src="images/rupert.webp" alt="Prince Rupert, BC" loading="lazy">
             </div>
 
         </div>
@@ -405,9 +406,9 @@
 
     </footer>
 
-    <script src="scripts/script.js"></script>
-    <script src="scripts/reveal.js"></script>
-    <script src="scripts/smoothScroll.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/reveal.js" defer></script>
+    <script src="scripts/smoothScroll.js" defer></script>
 
 </body>
 
