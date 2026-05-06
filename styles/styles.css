@@ -255,7 +255,7 @@ h3 {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: url("/images/hero.jpg") center/cover no-repeat;
+    background: url("/images/pexels-felix-mittermeier-1080401.jpg") center/cover no-repeat;
     z-index: 0;
 }
 
@@ -273,7 +273,7 @@ h3 {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: clamp(520px, 48vw, 860px);
+    max-width: clamp(520px, 60vw, 1000px);
 }
 
 .hero-eyebrow {
@@ -294,6 +294,10 @@ h3 {
     letter-spacing: -0.025em;
     margin-bottom: 26px;
     color: var(--ivory);
+}
+
+.hero-title span {
+    display: block;
 }
 
 .hero-title em {
@@ -330,6 +334,7 @@ h3 {
     box-shadow: 0 8px 28px rgba(109, 101, 91, 0.38);
 }
 
+
 /* ================= ABOUT ================= */
 .about {
     background: var(--cream);
@@ -353,7 +358,7 @@ h3 {
     position: relative;
     border-radius: 18px;
     overflow: hidden;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1/1;
 }
 
 .about-image img {
@@ -963,16 +968,6 @@ h3 {
         justify-content: center;
     }
 
-    .hero {
-        padding: 60px 24px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
 
     /* ABOUT: keep 2-column side-by-side, tighten gap */
     .about {
@@ -2304,5 +2299,15 @@ h3 {
         font-size: 0.68rem !important;
         white-space: nowrap;
         /* prevents "Book a Visit" breaking */
+    }
+}
+
+/* --- Very small phones: fix hero title wrapping --- */
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 2rem;
+        /* was 2.3rem at 500px */
+        line-height: 1.08;
+        letter-spacing: -0.02em;
     }
 }
