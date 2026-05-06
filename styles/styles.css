@@ -252,12 +252,10 @@ h3 {
     overflow: hidden;
 }
 
-.hero-bg-img {
+.hero-bg {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background: url("/images/roots.webp") center/cover no-repeat;
     z-index: 0;
 }
 
