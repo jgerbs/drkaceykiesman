@@ -47,6 +47,59 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/reveal.css" />
     <link rel="preload" as="image" href="/images/roots.webp">
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Kacey Kiesman",
+      "description": "Licensed Naturopathic Doctor and Registered Nurse in Kelowna, BC, specializing in hormone health, digestive wellness, fatigue, and aesthetic medicine.",
+      "image": "https://drkaceykiesman.com/images/kacey.webp",
+      "url": "https://drkaceykiesman.com/",
+      "telephone": "+1-778-940-9811",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "590 McKay Ave #200",
+        "addressLocality": "Kelowna",
+        "addressRegion": "BC",
+        "postalCode": "V1Y 5A8",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.8880,
+        "longitude": -119.4960
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
+      "medicalSpecialty": [
+        "Naturopathic Medicine",
+        "Hormone Health",
+        "Digestive Health",
+        "IV Therapy",
+        "Aesthetic Medicine"
+      ],
+      "priceRange": "$$",
+      "hasMap": "https://www.google.com/maps?q=590+McKay+Ave+%23200+Kelowna+BC+V1Y+5A8",
+      "sameAs": [
+        "https://www.instagram.com/drkaceykiesman/",
+        "https://www.instagram.com/springbokmedicalspa/"
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -273,7 +326,7 @@
                 <div class="more-item" data-reveal>
                     <h3>Botox / Filler</h3>
                     <p>Natural-looking aesthetic treatments performed by a licensed practitioner.</p>
-                    <a href="botox&filler.html" class="more-link">Learn More →</a>
+                    <a href="botox-filler.html" class="more-link">Learn More →</a>
                 </div>
 
                 <div class="more-item" data-reveal>

@@ -47,6 +47,75 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/reveal.css" />
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Kacey Kiesman",
+      "image": "https://drkaceykiesman.com/images/kacey.webp",
+      "url": "https://drkaceykiesman.com/contact.html",
+      "telephone": "+1-778-940-9811",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "590 McKay Ave #200",
+        "addressLocality": "Kelowna",
+        "addressRegion": "BC",
+        "postalCode": "V1Y 5A8",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.8880,
+        "longitude": -119.4960
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-778-940-9811",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.instagram.com/drkaceykiesman/",
+        "https://www.instagram.com/springbokmedicalspa/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://drkaceykiesman.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://drkaceykiesman.com/contact.html"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>

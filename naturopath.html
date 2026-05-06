@@ -56,14 +56,14 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/reveal.css" />
 
-    <!-- STRUCTURED DATA (LOCAL SEO BOOST) -->
+    <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Physician",
-      "name": "Dr. Kacey Kiesman ND",
-      "image": "https://drkaceykiesman.com/images/naturopath-cover.jpg",
-      "url": "https://drkaceykiesman.com",
+      "name": "Dr. Kacey Kiesman",
+      "image": "https://drkaceykiesman.com/images/naturopath.webp",
+      "url": "https://drkaceykiesman.com/naturopath.html",
       "telephone": "+1-778-940-9811",
       "address": {
         "@type": "PostalAddress",
@@ -73,16 +73,111 @@
         "postalCode": "V1Y 5A8",
         "addressCountry": "CA"
       },
-      "areaServed": "Kelowna BC",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.8880,
+        "longitude": -119.4960
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
       "medicalSpecialty": [
         "Naturopathic Medicine",
         "Hormone Health",
         "Digestive Health",
         "Fatigue"
       ],
+      "priceRange": "$$",
       "sameAs": [
         "https://www.instagram.com/drkaceykiesman/",
         "https://www.instagram.com/springbokmedicalspa/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://drkaceykiesman.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Naturopathic Medicine",
+          "item": "https://drkaceykiesman.com/naturopath.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is naturopathic medicine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Naturopathic medicine is a regulated health profession that combines evidence-based natural therapies with modern diagnostics. Naturopathic doctors are trained to identify root causes of illness and create individualized treatment plans that may include nutrition, botanical medicine, lifestyle counselling, and lab testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is naturopathic medicine covered by insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many extended health plans in BC cover naturopathic visits. We offer direct billing to most insurance companies. It's worth checking your plan before your appointment — most people are surprised by how much is covered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I expect at my first visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your initial consultation is 60 minutes. We'll go through your complete health history, current concerns, diet, lifestyle, and goals. By the end of the appointment, you'll have a clear care plan with specific next steps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This depends on what you're working on. Some people notice changes quickly — within a few weeks. Others, particularly those dealing with hormonal or chronic digestive issues, may need 2–3 months to see meaningful progress. Your care plan will set realistic timelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work alongside my family doctor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Naturopathic medicine works best as a complement to your conventional medical care. I'm happy to communicate with your GP or specialist when appropriate and to review any recent lab work or investigations you've had done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a referral?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No referral is needed to see a naturopathic doctor. You can book directly online at any time."
+          }
+        }
       ]
     }
     </script>
