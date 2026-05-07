@@ -7,9 +7,13 @@
     <title>Dr. Kacey Kiesman: Naturopathic Doctor, RN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
-        rel="stylesheet">
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+    </noscript>
 
     <!-- SEO Meta -->
     <meta name="description"
@@ -45,7 +49,29 @@
     <link rel="icon" href="https://drkaceykiesman.com/images/logo.png">
 
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/reveal.css" />
+    <style>
+        [data-reveal] {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity .6s ease-out, transform .6s ease-out;
+            will-change: opacity, transform
+        }
+
+        [data-reveal].is-visible {
+            opacity: 1;
+            transform: translateY(0);
+            will-change: auto
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            [data-reveal] {
+                opacity: 1;
+                transform: none;
+                transition: none;
+                will-change: auto
+            }
+        }
+    </style>
     <link rel="preload" as="image" href="/images/roots.webp">
 
     <!-- STRUCTURED DATA -->
@@ -257,9 +283,11 @@
             </div>
 
             <div class="services-cta" data-reveal-group>
-                <a href="naturopath.html" class="services-cta-btn" data-reveal>Learn More</a>
+                <a href="naturopath.html" class="services-cta-btn" data-reveal
+                    aria-label="Learn more about Naturopathic Medicine with Dr. Kacey Kiesman">Learn More</a>
                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                    class="services-cta-btn services-cta-btn--outline" data-reveal>Book Now</a>
+                    class="services-cta-btn services-cta-btn--outline" data-reveal
+                    aria-label="Book a Naturopathic consultation with Dr. Kacey Kiesman">Book Now</a>
             </div>
 
         </div>
@@ -422,18 +450,14 @@
             <div class="footer-book" data-reveal>
                 <h3>Quick Booking</h3>
                 <div class="footer-book-pills">
-                    <a href="/naturopath.html#options"
-                        class="footer-pill">Naturopath</a>
-                    <a href="/iv-therapy.html#options"
-                        class="footer-pill">IV Therapy</a>
+                    <a href="/naturopath.html#options" class="footer-pill">Naturopath</a>
+                    <a href="/iv-therapy.html#options" class="footer-pill">IV Therapy</a>
                     <a href="https://springbokmedicalspa.janeapp.com/#/discipline/1" target="_blank" rel="noopener"
                         class="footer-pill">Botox</a>
                     <a href="https://springbokmedicalspa.janeapp.com/#/discipline/7" target="_blank" rel="noopener"
                         class="footer-pill">Filler</a>
-                    <a href="/morpheus8.html#options"
-                        class="footer-pill">Morpheus 8</a>
-                    <a href="/laser.html#options"
-                        class="footer-pill">Laser</a>
+                    <a href="/morpheus8.html#options" class="footer-pill">Morpheus 8</a>
+                    <a href="/laser.html#options" class="footer-pill">Laser</a>
                 </div>
             </div>
 

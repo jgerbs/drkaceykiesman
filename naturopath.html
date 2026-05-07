@@ -48,13 +48,12 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"></noscript>
 
     <!-- STYLES -->
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/reveal.css" />
+    <style>[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease-out,transform .6s ease-out;will-change:opacity,transform}[data-reveal].is-visible{opacity:1;transform:translateY(0);will-change:auto}@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none;will-change:auto}}</style>
 
     <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
@@ -219,7 +218,7 @@
         </p>
         <div class="page-hero-actions" data-reveal>
             <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                class="hero-action-btn">Book Now</a>
+                class="hero-action-btn" aria-label="Book a Naturopathic consultation with Dr. Kacey Kiesman">Book Now</a>
         </div>
     </section>
 
@@ -318,7 +317,7 @@
                                     <li><span class="detail-label">Format</span><span>Video</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book Initial Consultation by video (60 min, $280)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -331,7 +330,7 @@
                                     <li><span class="detail-label">Format</span><span>Video</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 15-minute Follow-Up by video ($85)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -344,7 +343,7 @@
                                     <li><span class="detail-label">Format</span><span>Video</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 20-minute Follow-Up by video ($105)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -357,7 +356,7 @@
                                     <li><span class="detail-label">Format</span><span>Video</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 30-minute Follow-Up by video ($140)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -370,7 +369,7 @@
                                     <li><span class="detail-label">Format</span><span>Video</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 45-minute Follow-Up by video ($205)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -383,7 +382,7 @@
                                     <li><span class="detail-label">Format</span><span>Video</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book Prescription Fill by video ($30)">Book Now</a>
                             </div>
 
                         </div>
@@ -415,7 +414,7 @@
                                     <li><span class="detail-label">Format</span><span>In Person</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book Initial Consultation in person (60 min, $280)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -428,7 +427,7 @@
                                     <li><span class="detail-label">Format</span><span>In Person</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 15-minute Follow-Up in person ($85)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -441,7 +440,7 @@
                                     <li><span class="detail-label">Format</span><span>In Person</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 20-minute Follow-Up in person ($105)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -454,7 +453,7 @@
                                     <li><span class="detail-label">Format</span><span>In Person</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 30-minute Follow-Up in person ($140)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -467,7 +466,7 @@
                                     <li><span class="detail-label">Format</span><span>In Person</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 45-minute Follow-Up in person ($205)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -480,7 +479,7 @@
                                     <li><span class="detail-label">Format</span><span>In Person</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book Prescription Fill in person ($30)">Book Now</a>
                             </div>
 
                         </div>
@@ -512,7 +511,7 @@
                                     <li><span class="detail-label">Format</span><span>Phone</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book Initial Consultation by phone (60 min, $280)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -525,7 +524,7 @@
                                     <li><span class="detail-label">Format</span><span>Phone</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 15-minute Follow-Up by phone ($85)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -538,7 +537,7 @@
                                     <li><span class="detail-label">Format</span><span>Phone</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 20-minute Follow-Up by phone ($105)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -551,7 +550,7 @@
                                     <li><span class="detail-label">Format</span><span>Phone</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 30-minute Follow-Up by phone ($140)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -564,7 +563,7 @@
                                     <li><span class="detail-label">Format</span><span>Phone</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book 45-minute Follow-Up by phone ($205)">Book Now</a>
                             </div>
 
                             <div class="injectable-card">
@@ -577,7 +576,7 @@
                                     <li><span class="detail-label">Format</span><span>Phone</span></li>
                                 </ul>
                                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                                    class="injectable-book">Book Now</a>
+                                    class="injectable-book" aria-label="Book Prescription Fill by phone ($30)">Book Now</a>
                             </div>
 
                         </div>
@@ -763,7 +762,7 @@
                 online.</p>
             <div class="service-cta-buttons" data-reveal>
                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                    class="service-cta-btn">Book Now</a>
+                    class="service-cta-btn" aria-label="Book a Naturopathic consultation online">Book Now</a>
                 <a href="https://springbokmedicalspa.janeapp.com/#/discipline/21/treatment/101" target="_blank"
                     rel="noopener" class="service-cta-btn service-cta-btn--outline">Free Discovery Call</a>
             </div>

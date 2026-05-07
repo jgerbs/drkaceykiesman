@@ -10,9 +10,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"></noscript>
 
     <!-- SEO -->
     <meta name="description"
@@ -46,7 +45,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/reveal.css" />
+    <style>[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease-out,transform .6s ease-out;will-change:opacity,transform}[data-reveal].is-visible{opacity:1;transform:translateY(0);will-change:auto}@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none;will-change:auto}}</style>
 
     <!-- STRUCTURED DATA -->
     <script type="application/ld+json">

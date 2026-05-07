@@ -10,9 +10,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"></noscript>
 
     <!-- SEO -->
     <meta name="description"
@@ -47,7 +46,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/reveal.css" />
+    <style>[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease-out,transform .6s ease-out;will-change:opacity,transform}[data-reveal].is-visible{opacity:1;transform:translateY(0);will-change:auto}@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none;will-change:auto}}</style>
 
     <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
@@ -136,9 +135,9 @@
                 <p>Evidence-informed, holistic care that treats the whole person — not just the symptom. Comprehensive
                     assessment and personalized treatment plans addressing the root cause of your health concerns.</p>
                 <div class="svc-row-actions">
-                    <a href="naturopath.html" class="services-cta-btn">Learn More</a>
+                    <a href="naturopath.html" class="services-cta-btn" aria-label="Learn more about Naturopathic Medicine">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Naturopathic consultation">Book Now</a>
                 </div>
             </div>
         </div>
@@ -154,9 +153,9 @@
                 <p>Targeted nutrient delivery directly into the bloodstream for immediate, effective results. Support
                     energy, immunity, recovery, and more — faster than oral supplementation allows.</p>
                 <div class="svc-row-actions">
-                    <a href="iv-therapy.html" class="services-cta-btn">Learn More</a>
+                    <a href="iv-therapy.html" class="services-cta-btn" aria-label="Learn more about IV Therapy">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book an IV Therapy appointment">Book Now</a>
                 </div>
             </div>
             <div class="svc-row-media" data-reveal>
@@ -178,9 +177,9 @@
                 <p>Natural-looking results that soften fine lines and refresh your appearance. Administered by a
                     licensed practitioner with a careful eye for balance and harmony.</p>
                 <div class="svc-row-actions">
-                    <a href="botox-filler.html" class="services-cta-btn">Learn More</a>
+                    <a href="botox-filler.html" class="services-cta-btn" aria-label="Learn more about Botox">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/#/discipline/1" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Botox consultation">Book Now</a>
                 </div>
             </div>
         </div>
@@ -196,9 +195,9 @@
                 <p>Restore volume and refine contour with precision hyaluronic acid treatments tailored to your facial
                     anatomy. Subtle, natural enhancement that moves with you.</p>
                 <div class="svc-row-actions">
-                    <a href="botox-filler.html" class="services-cta-btn">Learn More</a>
+                    <a href="botox-filler.html" class="services-cta-btn" aria-label="Learn more about Dermal Filler">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/#/discipline/7" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Dermal Filler consultation">Book Now</a>
                 </div>
             </div>
             <div class="svc-row-media" data-reveal>
@@ -221,9 +220,9 @@
                 <p>Advanced skin tightening and rejuvenation using radiofrequency microneedling. Stimulate deep collagen
                     remodelling for lasting, natural-looking results with minimal downtime.</p>
                 <div class="svc-row-actions">
-                    <a href="morpheus8.html" class="services-cta-btn">Learn More</a>
+                    <a href="morpheus8.html" class="services-cta-btn" aria-label="Learn more about Morpheus8 RF Microneedling">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Morpheus8 consultation">Book Now</a>
                 </div>
             </div>
         </div>
@@ -239,9 +238,9 @@
                 <p>Precision treatments for pigmentation, resurfacing, and skin clarity. Each protocol is tailored to
                     your skin type and concerns for safe, effective results.</p>
                 <div class="svc-row-actions">
-                    <a href="laser.html" class="services-cta-btn">Learn More</a>
+                    <a href="laser.html" class="services-cta-btn" aria-label="Learn more about Laser Treatments">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Laser Treatment appointment">Book Now</a>
                 </div>
             </div>
             <div class="svc-row-media" data-reveal>
@@ -261,7 +260,7 @@
                 conversation.</p>
             <div class="service-cta-buttons" data-reveal>
                 <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                    class="service-cta-btn">Book Now</a>
+                    class="service-cta-btn" aria-label="Book an appointment with Dr. Kacey Kiesman">Book Now</a>
                 <a href="https://springbokmedicalspa.janeapp.com/#/discipline/21/treatment/101" target="_blank"
                     rel="noopener" class="service-cta-btn service-cta-btn--outline">Free Consultation</a>
             </div>

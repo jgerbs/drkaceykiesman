@@ -1,7 +1,60 @@
-/* ================= FONTS ================= */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+/* ============================================================
+   styles.css
+   Global stylesheet for drkaceykiesman.com
 
-/* ================= VARIABLES ================= */
+   Responsibilities:
+   - Design tokens (colours, fonts, spacing, easing)
+   - Global reset and base element styles
+   - All layout components: header, hero, sections, footer
+   - Interior page components: pricing, contact, cards, FAQ
+   - Responsive overrides across all breakpoints
+
+   Sections:
+     1)  Custom Properties
+     2)  Global Reset & Base
+     3)  Typography
+     4)  Header & Navigation
+     5)  Homepage Hero
+     6)  About Section
+     7)  Services Grid
+     8)  Specialty Marquee
+     9)  More Services Grid
+     10) Hours & Location
+     11) Footer
+     12) Page Hero (interior pages)
+     13) Page Hero Actions
+     14) Pricing Sections
+     15) Contact Form & Validation
+     16) Injectable Cards & Details
+     17) Expect Grid
+     18) Details Grid
+     19) FAQ Accordion
+     20) Service CTA
+     21) Service Feature Rows
+     22) Morpheus8 Accordion
+     23) Responsive Overrides
+
+   Cleanup notes:
+   - Removed @import Google Fonts — duplicate of <link> tags in HTML head;
+     CSS @import is render-blocking inside a render-blocking file and causes
+     a redundant network roundtrip.
+   - Removed [data-animate] block (46 lines) — dead code from a previous
+     animation system. The site uses data-reveal + reveal.css exclusively.
+   - Removed object-fit: cover from .about-image img — inherited from global img reset.
+   - Removed text-decoration: none from .services-cta-btn — inherited from global a reset.
+   - Removed padding/margin: 0 from .price-list and .injectable-details — covered
+     by the universal * reset.
+   - Removed padding: 0 from .expect-item ul — same reason.
+   - Removed redundant @media (max-width: 900px) morpheus8 block — set the same
+     grid-template-columns: 1fr 1fr as the non-media default.
+   - Merged two @media (max-width: 768px) nav/header blocks into one.
+   ============================================================ */
+
+
+/* ============================================================
+   1) CUSTOM PROPERTIES
+   ============================================================ */
+
 :root {
     --cream: #FAF8F2;
     --ivory: #F2EDE2;
@@ -21,7 +74,11 @@
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* ================= RESET ================= */
+
+/* ============================================================
+   2) GLOBAL RESET & BASE
+   ============================================================ */
+
 *,
 *::before,
 *::after {
@@ -43,7 +100,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Subtle grain texture */
+/* Subtle grain texture overlay */
 body::after {
     content: '';
     position: fixed;
@@ -64,7 +121,11 @@ a {
     text-decoration: none;
 }
 
-/* ================= TYPOGRAPHY ================= */
+
+/* ============================================================
+   3) TYPOGRAPHY
+   ============================================================ */
+
 h1,
 h2,
 h3 {
@@ -84,55 +145,11 @@ h3 {
     margin-bottom: 14px;
 }
 
-/* ================= SCROLL REVEAL ================= */
-[data-animate] {
-    opacity: 0;
-    transform: translateY(26px);
-    transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
-}
 
-[data-animate].is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+/* ============================================================
+   4) HEADER & NAVIGATION
+   ============================================================ */
 
-.about-text[data-animate] {
-    transition-delay: 0.12s;
-}
-
-.services-grid [data-animate]:nth-child(2) {
-    transition-delay: 0.08s;
-}
-
-.services-grid [data-animate]:nth-child(3) {
-    transition-delay: 0.16s;
-}
-
-.services-grid [data-animate]:nth-child(4) {
-    transition-delay: 0.08s;
-}
-
-.services-grid [data-animate]:nth-child(5) {
-    transition-delay: 0.16s;
-}
-
-.services-grid [data-animate]:nth-child(6) {
-    transition-delay: 0.24s;
-}
-
-.more-grid [data-animate]:nth-child(2) {
-    transition-delay: 0.08s;
-}
-
-.more-grid [data-animate]:nth-child(3) {
-    transition-delay: 0.16s;
-}
-
-.more-grid [data-animate]:nth-child(4) {
-    transition-delay: 0.24s;
-}
-
-/* ================= HEADER ================= */
 .site-header {
     position: sticky;
     top: 0;
@@ -147,12 +164,6 @@ h3 {
     border-bottom-color: var(--beige);
     background: rgba(250, 248, 242, 0.94);
     backdrop-filter: blur(10px);
-}
-
-@media (max-width: 768px) {
-    .site-header {
-        position: relative;
-    }
 }
 
 .header-inner {
@@ -240,7 +251,38 @@ h3 {
     color: #FAF8F2 !important;
 }
 
-/* ================= HERO ================= */
+/* Active nav state for current page */
+.nav-active {
+    color: var(--brown) !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        position: relative;
+    }
+
+    .main-nav {
+        gap: 14px;
+        flex-wrap: nowrap;
+    }
+
+    .main-nav a {
+        font-size: 0.75rem;
+    }
+
+    .nav-book {
+        padding: 6px 12px;
+        font-size: 0.68rem !important;
+        white-space: nowrap;
+    }
+}
+
+
+/* ============================================================
+   5) HOMEPAGE HERO
+   ============================================================ */
+
 .hero {
     position: relative;
     height: 92vh;
@@ -335,7 +377,10 @@ h3 {
 }
 
 
-/* ================= ABOUT ================= */
+/* ============================================================
+   6) ABOUT SECTION
+   ============================================================ */
+
 .about {
     background: var(--cream);
     padding: clamp(80px, 10vw, 140px) clamp(20px, 5vw, 80px);
@@ -363,7 +408,6 @@ h3 {
 
 .about-image img {
     height: 100%;
-    object-fit: cover;
 }
 
 .about-heading {
@@ -393,7 +437,11 @@ h3 {
     border-top: 1px solid var(--beige);
 }
 
-/* ================= SERVICES ================= */
+
+/* ============================================================
+   7) SERVICES GRID
+   ============================================================ */
+
 .services {
     background: var(--ivory);
     padding: clamp(80px, 10vw, 160px) clamp(16px, 2vw, 32px);
@@ -477,7 +525,6 @@ h3 {
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    text-decoration: none;
     padding: 14px 32px;
     border-radius: 999px;
     transition: background 0.2s;
@@ -498,15 +545,18 @@ h3 {
     color: var(--cream);
 }
 
-/* ================= SPECIALTY MARQUEE ================= */
+
+/* ============================================================
+   8) SPECIALTY MARQUEE
+   ============================================================ */
+
 .marquee-section {
     background: var(--brown);
     overflow: hidden;
     padding: 0;
-    /* waves replace the straight edges */
 }
 
-/* Wave: ivory (services) melts into brown — mobile: 2 cycles */
+/* Wave: ivory (services) melts into brown */
 .marquee-section::before {
     content: '';
     display: block;
@@ -515,7 +565,7 @@ h3 {
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 90' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,0 L1440,0 L1440,45 C1200,8 960,82 720,45 C480,8 240,82 0,45 Z' fill='%23F2EDE2'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
 }
 
-/* Wave: brown melts into cream — mobile: 2 cycles */
+/* Wave: brown melts into cream */
 .marquee-section::after {
     content: '';
     display: block;
@@ -524,7 +574,6 @@ h3 {
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 90' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,45 C240,8 480,82 720,45 C960,8 1200,82 1440,45 L1440,90 L0,90 Z' fill='%23FAF8F2'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
 }
 
-/* Tablet: 3 cycles, taller */
 @media (min-width: 900px) {
     .marquee-section::before {
         height: 120px;
@@ -537,7 +586,6 @@ h3 {
     }
 }
 
-/* Desktop: 4 cycles, tallest */
 @media (min-width: 1400px) {
     .marquee-section::before {
         height: 150px;
@@ -587,16 +635,15 @@ h3 {
 }
 
 @keyframes marquee-scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
 }
 
-/* ================= MORE SERVICES ================= */
+
+/* ============================================================
+   9) MORE SERVICES GRID
+   ============================================================ */
+
 .more-services {
     background: var(--cream);
     padding: clamp(80px, 10vw, 160px) clamp(16px, 2vw, 32px);
@@ -660,7 +707,11 @@ h3 {
     opacity: 0.6;
 }
 
-/* ================= LOCATION ================= */
+
+/* ============================================================
+   10) HOURS & LOCATION
+   ============================================================ */
+
 .location {
     background: var(--ivory);
     padding: clamp(80px, 10vw, 160px) clamp(16px, 2vw, 32px);
@@ -711,7 +762,11 @@ h3 {
     display: block;
 }
 
-/* ================= FOOTER ================= */
+
+/* ============================================================
+   11) FOOTER
+   ============================================================ */
+
 .footer {
     position: relative;
     background: var(--brown);
@@ -719,7 +774,7 @@ h3 {
     padding: 120px 40px 0;
 }
 
-/* Ivory melts into brown (top of footer) */
+/* Ivory melts into brown at top of footer */
 .footer::before {
     content: '';
     position: absolute;
@@ -729,6 +784,17 @@ h3 {
     height: 90px;
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 90' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,45 C240,8 480,82 720,45 C960,8 1200,82 1440,45 L1440,0 L0,0 Z' fill='%23F2EDE2'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
     pointer-events: none;
+}
+
+@media (min-width: 961px) {
+    .footer {
+        padding-top: 160px;
+    }
+
+    .footer::before {
+        height: 140px;
+        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 140' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,70 C240,5 480,135 720,70 C960,5 1200,135 1440,70 L1440,0 L0,0 Z' fill='%23F2EDE2'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+    }
 }
 
 .footer-inner {
@@ -745,7 +811,7 @@ h3 {
     min-width: 0;
 }
 
-/* — Brand column — */
+/* Brand column */
 .footer-name {
     font-family: var(--font-display);
     font-style: italic;
@@ -775,7 +841,6 @@ h3 {
     font-size: 0.78rem;
     font-weight: 300;
     letter-spacing: 0.04em;
-    text-decoration: none;
     transition: color 0.25s;
 }
 
@@ -808,6 +873,15 @@ h3 {
 }
 
 @media (max-width: 1200px) {
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 32px;
+    }
+
+    .footer-inner > *:nth-child(even) {
+        text-align: right;
+    }
+
     .footer-socials {
         flex-direction: column;
         align-items: flex-start;
@@ -815,7 +889,7 @@ h3 {
     }
 }
 
-/* — Column headings — */
+/* Column headings */
 .footer h3 {
     font-family: var(--font-body);
     font-size: 0.58rem;
@@ -826,7 +900,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-/* — Contact column — */
+/* Contact column */
 .footer-contact p,
 .footer-contact a {
     font-size: 0.84rem;
@@ -835,7 +909,6 @@ h3 {
     font-weight: 300;
     line-height: 1.65;
     display: block;
-    text-decoration: none;
     transition: color 0.2s;
 }
 
@@ -843,7 +916,7 @@ h3 {
     color: var(--cream);
 }
 
-/* — Quick Booking pills — */
+/* Quick booking pills */
 .footer-book-pills {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -858,7 +931,6 @@ h3 {
     font-size: 0.74rem;
     letter-spacing: 0.04em;
     color: rgba(242, 237, 226, 0.58);
-    text-decoration: none;
     font-weight: 300;
     text-align: center;
     white-space: nowrap;
@@ -873,7 +945,27 @@ h3 {
     color: var(--cream);
 }
 
-/* — Pages nav column — */
+@media (max-width: 600px) {
+    .footer-book-pills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-pill {
+        font-size: 0.7rem;
+        letter-spacing: 0.02em;
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-pill {
+        font-size: 0.66rem;
+        letter-spacing: 0.01em;
+        padding: 5px 6px;
+    }
+}
+
+/* Pages nav column */
 .footer-nav {
     text-align: right;
 }
@@ -884,7 +976,6 @@ h3 {
     color: rgba(255, 255, 255, 0.48);
     margin-bottom: 10px;
     font-weight: 300;
-    text-decoration: none;
     letter-spacing: 0.01em;
     transition: color 0.2s;
 }
@@ -893,7 +984,7 @@ h3 {
     color: var(--cream);
 }
 
-/* — Bottom bar — */
+/* Bottom bar */
 .footer-bottom {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -911,7 +1002,7 @@ h3 {
     letter-spacing: 0.02em;
 }
 
-/* — Back to top — */
+/* Back to top button */
 .back-to-top {
     width: 34px;
     height: 34px;
@@ -934,215 +1025,11 @@ h3 {
     background: rgba(255, 255, 255, 0.06);
 }
 
-/* ================= RESPONSIVE ================= */
 
-/* --- Desktop: deeper, more dramatic footer wave --- */
-@media (min-width: 961px) {
-    .footer {
-        padding-top: 160px;
-    }
+/* ============================================================
+   12) PAGE HERO (interior pages)
+   ============================================================ */
 
-    .footer::before {
-        height: 140px;
-        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 140' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,70 C240,5 480,135 720,70 C960,5 1200,135 1440,70 L1440,0 L0,0 Z' fill='%23F2EDE2'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
-    }
-}
-
-/* --- Tablet: 960px --- */
-@media (max-width: 960px) {
-
-    .site-header {
-        padding: 18px 24px;
-    }
-
-    .header-inner {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .main-nav {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
-    /* ABOUT: keep 2-column side-by-side, tighten gap */
-    .about {
-        padding: 80px 32px;
-    }
-
-    .about-inner {
-        gap: 40px;
-    }
-
-    /* SERVICES: 2×3 */
-    .services {
-        padding: 80px 20px;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* MORE SERVICES: 2×2 */
-    .more-services {
-        padding: 80px 20px;
-    }
-
-    .more-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .location {
-        padding: 80px 20px;
-    }
-
-    .location-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .footer {
-        padding: 80px 24px 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    .footer-inner {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px 32px;
-    }
-
-    .footer-inner > *:nth-child(even) {
-        text-align: right;
-    }
-}
-
-/* --- Pills: shrink to 2 cols when footer columns get narrow --- */
-@media (max-width: 600px) {
-    .footer-book-pills {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .footer-pill {
-        font-size: 0.7rem;
-        letter-spacing: 0.02em;
-        padding: 5px 8px;
-    }
-}
-
-/* --- Compact: 700px --- */
-@media (max-width: 700px) {
-    .about-inner,
-    .about-inner--flip {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .about-image {
-        aspect-ratio: 1;
-    }
-
-    .about-heading {
-        font-size: 1.6rem;
-        margin-bottom: 14px;
-    }
-
-    .about-body {
-        font-size: 0.9rem;
-        line-height: 1.7;
-    }
-}
-
-/* --- Mobile: 500px --- */
-@media (max-width: 500px) {
-    .hero-title {
-        font-size: 2.3rem;
-    }
-
-    /* ABOUT */
-    .about {
-        padding: 56px 16px;
-    }
-
-    .about-inner {
-        gap: 20px;
-    }
-
-    .about-image {
-        aspect-ratio: 1;
-        border-radius: 12px;
-    }
-    
-
-    .about-heading {
-        font-size: 1.5rem;
-        line-height: 1.25;
-    }
-
-    .about-body {
-        font-size: 0.9rem;
-        line-height: 1.7;
-    }
-
-    /* SERVICES: keep 2-col */
-    .services {
-        padding: 56px 16px;
-    }
-
-    .service {
-        padding: 20px 0;
-    }
-
-    .service h3 {
-        font-size: 1.1rem;
-    }
-
-    .service p {
-        font-size: 0.82rem;
-    }
-
-    /* MORE SERVICES: keep 2×2 */
-    .more-services {
-        padding: 56px 16px;
-    }
-
-    .more-item {
-        padding: 20px 0;
-    }
-
-    .more-num {
-        font-size: 1.5rem;
-        margin-bottom: 12px;
-    }
-
-    .more-item h3 {
-        font-size: 1.05rem;
-    }
-
-    .location {
-        padding: 56px 16px;
-    }
-
-    .footer-name {
-        font-size: 2rem;
-    }
-}
-
-/* --- Very small phones: tighten pill text --- */
-@media (max-width: 400px) {
-    .footer-pill {
-        font-size: 0.66rem;
-        letter-spacing: 0.01em;
-        padding: 5px 6px;
-    }
-}
-
-
-/* ================= PAGE HERO (interior pages) ================= */
 .page-hero {
     position: relative;
     background: var(--brown);
@@ -1173,6 +1060,7 @@ h3 {
     }
 }
 
+/* Variant that bleeds into ivory instead of cream */
 .page-hero--ivory::after {
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 90' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,50 C240,10 480,90 720,50 C960,10 1200,90 1440,50 L1440,90 L0,90 Z' fill='%23F2EDE2'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
 }
@@ -1211,13 +1099,53 @@ h3 {
     line-height: 1.7;
 }
 
-/* Active nav state for current page */
-.nav-active {
-    color: var(--brown) !important;
-    opacity: 1 !important;
+
+/* ============================================================
+   13) PAGE HERO ACTIONS
+   ============================================================ */
+
+.page-hero-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
 }
 
-/* ================= PRICING SECTIONS ================= */
+.hero-action-btn {
+    display: inline-block;
+    background: var(--ivory);
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 32px;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.hero-action-btn:hover {
+    background: var(--cream);
+}
+
+.hero-action-btn--outline {
+    background: transparent;
+    border: 1px solid rgba(242, 237, 226, 0.45);
+    color: rgba(242, 237, 226, 0.85);
+}
+
+.hero-action-btn--outline:hover {
+    background: rgba(242, 237, 226, 0.12);
+    color: var(--ivory);
+}
+
+
+/* ============================================================
+   14) PRICING SECTIONS
+   ============================================================ */
+
 .pricing-section {
     background: var(--cream);
     padding: clamp(80px, 10vw, 130px) clamp(16px, 4vw, 64px);
@@ -1250,7 +1178,7 @@ h3 {
     margin: 12px 0 16px;
 }
 
-.pricing-header>p {
+.pricing-header > p {
     font-family: var(--font-body);
     font-size: 0.86rem;
     color: var(--text-mid);
@@ -1260,8 +1188,6 @@ h3 {
 
 .price-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .price-item {
@@ -1316,11 +1242,12 @@ h3 {
     letter-spacing: 0.01em;
 }
 
-/* Within a revealed row: name appears first, price follows */
+/* Staggered price reveal — amount fades in after its row */
 [data-reveal] .price-amount {
     opacity: 0;
     transition: opacity 0.4s ease-out 0.22s;
 }
+
 [data-reveal].is-visible .price-amount {
     opacity: 1;
 }
@@ -1337,7 +1264,10 @@ h3 {
 }
 
 
-/* ================= CONTACT FORM ================= */
+/* ============================================================
+   15) CONTACT FORM & VALIDATION
+   ============================================================ */
+
 .contact-section {
     background: var(--ivory);
     padding: clamp(80px, 10vw, 130px) clamp(16px, 4vw, 64px);
@@ -1404,7 +1334,6 @@ h3 {
     line-height: 1.6;
 }
 
-/* Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -1494,6 +1423,27 @@ h3 {
     cursor: default;
 }
 
+/* Validation error states */
+.field-error {
+    border-bottom-color: #c94b4b !important;
+}
+
+.field-error:focus {
+    border-bottom-color: #c94b4b;
+    box-shadow: 0 6px 12px -8px rgba(201, 75, 75, 0.4);
+}
+
+.field-error + label,
+.form-field:has(.field-error) label {
+    color: #c94b4b;
+}
+
+.form-error-text {
+    font-size: 0.7rem;
+    color: #c94b4b;
+    margin-top: 4px;
+}
+
 @media (max-width: 760px) {
     .contact-inner {
         grid-template-columns: 180px 1fr;
@@ -1529,70 +1479,11 @@ h3 {
     }
 }
 
-/* ================= FORM ERRORS ================= */
 
-.field-error {
-    border-bottom-color: #c94b4b !important;
-}
+/* ============================================================
+   16) INJECTABLE CARDS & DETAILS
+   ============================================================ */
 
-/* subtle glow */
-.field-error:focus {
-    border-bottom-color: #c94b4b;
-    box-shadow: 0 6px 12px -8px rgba(201, 75, 75, 0.4);
-}
-
-/* optional: label color change */
-.field-error+label,
-.form-field:has(.field-error) label {
-    color: #c94b4b;
-}
-
-/* error message (future if you add text) */
-.form-error-text {
-    font-size: 0.7rem;
-    color: #c94b4b;
-    margin-top: 4px;
-}
-
-/* ================= PAGE HERO ACTIONS ================= */
-.page-hero-actions {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 32px;
-}
-
-.hero-action-btn {
-    display: inline-block;
-    background: var(--ivory);
-    color: var(--text-dark);
-    font-family: var(--font-body);
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 13px 32px;
-    border-radius: 999px;
-    transition: background 0.2s, color 0.2s;
-}
-
-.hero-action-btn:hover {
-    background: var(--cream);
-}
-
-.hero-action-btn--outline {
-    background: transparent;
-    border: 1px solid rgba(242, 237, 226, 0.45);
-    color: rgba(242, 237, 226, 0.85);
-}
-
-.hero-action-btn--outline:hover {
-    background: rgba(242, 237, 226, 0.12);
-    color: var(--ivory);
-}
-
-/* ================= INJECTABLE CARDS ================= */
 .injectables-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1622,7 +1513,6 @@ h3 {
     flex-direction: column;
     gap: 6px;
     padding-bottom: 20px;
-    margin-bottom: 0;
 }
 
 .injectable-card h3 {
@@ -1663,13 +1553,10 @@ h3 {
 
 .injectable-details {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     flex: 1;
     border-top: 1px solid var(--beige);
-    margin-top: 0;
 }
 
 .injectable-details li {
@@ -1720,7 +1607,11 @@ h3 {
     color: var(--cream);
 }
 
-/* ================= EXPECT GRID ================= */
+
+/* ============================================================
+   17) EXPECT GRID
+   ============================================================ */
+
 .expect-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1739,7 +1630,6 @@ h3 {
 
 .expect-item ul {
     list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -1760,7 +1650,11 @@ h3 {
     line-height: 1.75;
 }
 
-/* ================= DETAILS GRID ================= */
+
+/* ============================================================
+   18) DETAILS GRID
+   ============================================================ */
+
 .details-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1772,6 +1666,7 @@ h3 {
     border-top: 1px solid var(--beige);
 }
 
+/* Remove top border for second row items (seamless look) */
 .detail-item:nth-child(n+4) {
     border-top-color: transparent;
 }
@@ -1793,7 +1688,11 @@ h3 {
     line-height: 1.65;
 }
 
-/* ================= FAQ ================= */
+
+/* ============================================================
+   19) FAQ ACCORDION
+   ============================================================ */
+
 .faq-list {
     display: flex;
     flex-direction: column;
@@ -1848,7 +1747,11 @@ h3 {
     max-width: 680px;
 }
 
-/* ================= SERVICE CTA ================= */
+
+/* ============================================================
+   20) SERVICE CTA
+   ============================================================ */
+
 .service-cta {
     background: var(--ivory);
     padding: clamp(80px, 10vw, 130px) clamp(16px, 4vw, 64px);
@@ -1917,73 +1820,11 @@ h3 {
     color: var(--cream);
 }
 
-/* ================= SERVICE PAGE RESPONSIVE ================= */
-@media (max-width: 760px) {
-    .injectables-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
 
-    .expect-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
+/* ============================================================
+   21) SERVICE FEATURE ROWS
+   ============================================================ */
 
-    .expect-item:last-child {
-        grid-column: 1 / -1;
-    }
-
-    .details-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .detail-item:nth-child(n+4) {
-        border-top-color: var(--beige);
-    }
-
-    .detail-item:nth-child(n+3) {
-        border-top-color: transparent;
-    }
-}
-
-@media (max-width: 480px) {
-    .injectables-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-    }
-
-    .injectable-card {
-        padding: 24px 18px;
-    }
-
-    .expect-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-    }
-
-    .expect-item {
-        padding: 22px 16px;
-    }
-
-    .details-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-    }
-
-    .detail-item {
-        padding: 20px 16px;
-    }
-
-    .detail-item:nth-child(n+3) {
-        border-top-color: var(--beige);
-    }
-
-    .detail-item:nth-child(2n+1) {
-        border-top-color: transparent;
-    }
-}
-
-/* ================= SERVICE FEATURE ROWS ================= */
 .svc-row {
     background: var(--cream);
     padding: clamp(80px, 10vw, 140px) clamp(16px, 4vw, 64px);
@@ -2002,19 +1843,15 @@ h3 {
     align-items: center;
 }
 
-/* --- CONTROL IMAGE SIZE + SHAPE --- */
 .svc-row-media {
     display: flex;
     justify-content: center;
-    /* keeps it elegant */
 }
 
 .svc-media-image {
     width: 100%;
     max-width: clamp(400px, 28vw, 580px);
-    /* 👈 key fix */
     aspect-ratio: 4/4;
-    /* 👈 vertical shape */
     object-fit: cover;
     border-radius: 16px;
     transition: transform 0.4s var(--ease);
@@ -2065,7 +1902,6 @@ h3 {
     flex-wrap: wrap;
 }
 
-/* Tablet: tighten spacing, keep L/R */
 @media (max-width: 900px) {
     .svc-row {
         padding: 60px clamp(16px, 4vw, 40px);
@@ -2088,9 +1924,7 @@ h3 {
     }
 }
 
-/* Mobile: compressed L/R — square media, smaller type, stacked buttons */
 @media (max-width: 640px) {
-
     .svc-row-inner {
         gap: 16px;
         align-items: start;
@@ -2116,11 +1950,8 @@ h3 {
         flex-direction: column;
         gap: 8px;
     }
-
 }
 
-
-/* Very small phones only: stack */
 @media (max-width: 500px) {
     .svc-row-inner {
         grid-template-columns: 1fr;
@@ -2155,7 +1986,11 @@ h3 {
     }
 }
 
-/* ================= MORPHEUS8 OPTION ACCORDION ================= */
+
+/* ============================================================
+   22) MORPHEUS8 ACCORDION
+   ============================================================ */
+
 .morph-options {
     display: flex;
     flex-direction: column;
@@ -2249,15 +2084,12 @@ h3 {
     width: 100%;
 }
 
-@media (max-width: 900px) {
-    .morph-option-body .injectables-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media (max-width: 500px) {
+    .morph-option-summary {
+        padding: 20px 0;
+    }
+
     .morph-option-body .injectables-grid {
-        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
@@ -2273,40 +2105,236 @@ h3 {
         padding: 10px 12px;
         font-size: 0.62rem;
     }
+}
 
-    .morph-option-summary {
+
+/* ============================================================
+   23) RESPONSIVE OVERRIDES
+   ============================================================ */
+
+/* --- Tablet: 960px --- */
+@media (max-width: 960px) {
+
+    .site-header {
+        padding: 18px 24px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main-nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about {
+        padding: 80px 32px;
+    }
+
+    .about-inner {
+        gap: 40px;
+    }
+
+    .services {
+        padding: 80px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .more-services {
+        padding: 80px 20px;
+    }
+
+    .more-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .location {
+        padding: 80px 20px;
+    }
+
+    .location-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer {
+        padding: 80px 24px 0;
+    }
+}
+
+/* --- Compact: 700px --- */
+@media (max-width: 700px) {
+    .about-inner,
+    .about-inner--flip {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-image {
+        aspect-ratio: 1;
+    }
+
+    .about-heading {
+        font-size: 1.6rem;
+        margin-bottom: 14px;
+    }
+
+    .about-body {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+}
+
+/* --- Service page grids: 760px --- */
+@media (max-width: 760px) {
+    .injectables-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .expect-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .expect-item:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .detail-item:nth-child(n+4) {
+        border-top-color: var(--beige);
+    }
+
+    .detail-item:nth-child(n+3) {
+        border-top-color: transparent;
+    }
+}
+
+/* --- Mobile: 500px --- */
+@media (max-width: 500px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .about {
+        padding: 56px 16px;
+    }
+
+    .about-inner {
+        gap: 20px;
+    }
+
+    .about-image {
+        aspect-ratio: 1;
+        border-radius: 12px;
+    }
+
+    .about-heading {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .about-body {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .services {
+        padding: 56px 16px;
+    }
+
+    .service {
         padding: 20px 0;
     }
+
+    .service h3 {
+        font-size: 1.1rem;
+    }
+
+    .service p {
+        font-size: 0.82rem;
+    }
+
+    .more-services {
+        padding: 56px 16px;
+    }
+
+    .more-item {
+        padding: 20px 0;
+    }
+
+    .more-num {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    .more-item h3 {
+        font-size: 1.05rem;
+    }
+
+    .location {
+        padding: 56px 16px;
+    }
+
+    .footer-name {
+        font-size: 2rem;
+    }
 }
 
-
-@media (max-width: 768px) {
-    .main-nav {
+/* --- Service page cards: 480px --- */
+@media (max-width: 480px) {
+    .injectables-grid {
+        grid-template-columns: 1fr 1fr;
         gap: 14px;
-        /* tighter spacing between links */
-        flex-wrap: nowrap;
-        /* prevent wrapping to new line */
     }
 
-    .main-nav a {
-        font-size: 0.75rem;
-        /* slightly smaller links */
+    .injectable-card {
+        padding: 24px 18px;
     }
 
-    .nav-book {
-        padding: 6px 12px;
-        /* smaller button */
-        font-size: 0.68rem !important;
-        white-space: nowrap;
-        /* prevents "Book a Visit" breaking */
+    .expect-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .expect-item {
+        padding: 22px 16px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .detail-item {
+        padding: 20px 16px;
+    }
+
+    .detail-item:nth-child(n+3) {
+        border-top-color: var(--beige);
+    }
+
+    .detail-item:nth-child(2n+1) {
+        border-top-color: transparent;
     }
 }
 
-/* --- Very small phones: fix hero title wrapping --- */
+/* --- Very small phones: 380px --- */
 @media (max-width: 380px) {
     .hero-title {
         font-size: 2rem;
-        /* was 2.3rem at 500px */
         line-height: 1.08;
         letter-spacing: -0.02em;
     }
