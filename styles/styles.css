@@ -827,7 +827,7 @@ h3 {
     font-size: 0.6rem;
     letter-spacing: 0.17em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.32);
+    color: var(--ivory);
     font-weight: 400;
     margin-bottom: 28px;
     white-space: nowrap;
@@ -837,7 +837,7 @@ h3 {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: rgba(255, 255, 255, 0.45);
+    color: var(--ivory);
     font-size: 0.78rem;
     font-weight: 300;
     letter-spacing: 0.04em;
@@ -851,7 +851,7 @@ h3 {
 .footer-instagram-icon {
     width: 32px;
     height: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -896,7 +896,7 @@ h3 {
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--ivory);
     margin-bottom: 20px;
 }
 
@@ -904,7 +904,7 @@ h3 {
 .footer-contact p,
 .footer-contact a {
     font-size: 0.84rem;
-    color: rgba(255, 255, 255, 0.48);
+    color: var(--ivory);
     margin-bottom: 5px;
     font-weight: 300;
     line-height: 1.65;
@@ -930,7 +930,7 @@ h3 {
     border-radius: 100px;
     font-size: 0.74rem;
     letter-spacing: 0.04em;
-    color: rgba(242, 237, 226, 0.58);
+    color: var(--ivory);
     font-weight: 300;
     text-align: center;
     white-space: nowrap;
@@ -973,7 +973,7 @@ h3 {
 .footer-nav a {
     display: block;
     font-size: 0.84rem;
-    color: rgba(255, 255, 255, 0.48);
+    color: var(--ivory);
     margin-bottom: 10px;
     font-weight: 300;
     letter-spacing: 0.01em;
