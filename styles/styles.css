@@ -59,8 +59,8 @@
     --cream: #FAF8F2;
     --ivory: #F2EDE2;
     --beige: #E4DDD0;
-    --brown-light: #9c948b;
-    --brown: #6d655b;
+    --brown-light: #3a4b5f;
+    --brown: #5c6c74;
 
     --text-dark: #1A1814;
     --text-mid: #4A453E;
@@ -297,7 +297,7 @@ h3 {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: url("/images/roots.webp") center/cover no-repeat;
+    background: url("/images/rock1.1.jpg") center/cover no-repeat;
     z-index: 0;
 }
 
@@ -340,6 +340,7 @@ h3 {
 
 .hero-title span {
     display: block;
+    white-space: nowrap;
 }
 
 .hero-title em {
@@ -541,7 +542,7 @@ h3 {
 }
 
 .services-cta-btn--outline:hover {
-    background: var(--brown);
+    background: var(--brown-light);
     color: var(--cream);
 }
 

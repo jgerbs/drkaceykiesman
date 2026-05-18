@@ -10,8 +10,13 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"></noscript>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+    </noscript>
 
     <!-- SEO -->
     <meta name="description"
@@ -46,7 +51,29 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css" />
-    <style>[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease-out,transform .6s ease-out;will-change:opacity,transform}[data-reveal].is-visible{opacity:1;transform:translateY(0);will-change:auto}@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none;will-change:auto}}</style>
+    <style>
+        [data-reveal] {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity .6s ease-out, transform .6s ease-out;
+            will-change: opacity, transform
+        }
+
+        [data-reveal].is-visible {
+            opacity: 1;
+            transform: translateY(0);
+            will-change: auto
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            [data-reveal] {
+                opacity: 1;
+                transform: none;
+                transition: none;
+                will-change: auto
+            }
+        }
+    </style>
 
     <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
@@ -117,7 +144,8 @@
     <section class="page-hero" data-reveal-group>
         <p class="eyebrow" data-reveal>What I Offer</p>
         <h1 data-reveal>My <em>Services</em></h1>
-        <p class="page-hero-sub" data-reveal>Thoughtful, results-driven care that supports your health, confidence, and long-term wellbeing.</p>
+        <p class="page-hero-sub" data-reveal>Thoughtful, results-driven care that supports your health, confidence, and
+            long-term wellbeing.</p>
     </section>
 
 
@@ -134,9 +162,11 @@
                 <p>Evidence-informed, holistic care that treats the whole person — not just the symptom. Comprehensive
                     assessment and personalized treatment plans addressing the root cause of your health concerns.</p>
                 <div class="svc-row-actions">
-                    <a href="naturopath.html" class="services-cta-btn" aria-label="Learn more about Naturopathic Medicine">Learn More</a>
+                    <a href="naturopath.html" class="services-cta-btn"
+                        aria-label="Learn more about Naturopathic Medicine">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Naturopathic consultation">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline"
+                        aria-label="Book a Naturopathic consultation">Book Now</a>
                 </div>
             </div>
         </div>
@@ -148,103 +178,189 @@
         <div class="svc-row-inner svc-row-inner--flip" data-reveal-group>
             <div class="svc-row-content" data-reveal>
                 <p class="eyebrow">Intravenous Wellness</p>
-                <h2>IV Therapy</h2>
+                <h2>IV & IM Therapy</h2>
                 <p>Targeted nutrient delivery directly into the bloodstream for immediate, effective results. Support
                     energy, immunity, recovery, and more — faster than oral supplementation allows.</p>
                 <div class="svc-row-actions">
-                    <a href="iv-therapy.html" class="services-cta-btn" aria-label="Learn more about IV Therapy">Learn More</a>
+                    <a href="iv-therapy.html" class="services-cta-btn" aria-label="Learn more about IV Therapy">Learn
+                        More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline" aria-label="Book an IV Therapy appointment">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline"
+                        aria-label="Book an IV Therapy appointment">Book Now</a>
                 </div>
             </div>
             <div class="svc-row-media" data-reveal>
-                <img src="images/iv.webp" alt="IV Therapy at Springbok Medical Spa" class="svc-media-image" loading="lazy"/>
+                <img src="images/iv.webp" alt="IV Therapy at Springbok Medical Spa" class="svc-media-image"
+                    loading="lazy" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= IRON IV THERAPY ================= -->
+    <section class="svc-row">
+        <div class="svc-row-inner" data-reveal-group>
+            <div class="svc-row-media" data-reveal>
+                <img src="images/iv.webp" alt="Iron IV Therapy at Springbok Medical Spa" class="svc-media-image"
+                    loading="lazy" />
+            </div>
+            <div class="svc-row-content" data-reveal>
+                <p class="eyebrow">Iron Infusion</p>
+                <h2>Iron IV Therapy</h2>
+                <p>Fast-acting iron infusion for those with iron deficiency or anemia. Delivers superior absorption
+                    compared to oral supplements, restoring energy, reducing fatigue, and supporting overall vitality.</p>
+                <div class="svc-row-actions">
+                    <a href="iv-therapy.html" class="services-cta-btn" aria-label="Learn more about Iron IV Therapy">Learn
+                        More</a>
+                    <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
+                        class="services-cta-btn services-cta-btn--outline"
+                        aria-label="Book an Iron IV Therapy appointment">Book Now</a>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- ================= BOTOX ================= -->
-    <section class="svc-row">
-        <div class="svc-row-inner" data-reveal-group>
-            <div class="svc-row-media" data-reveal>
-                <img src="images/botox.webp" alt="Botox at Springbok Medical Spa" class="svc-media-image" style="object-position: 50% 100%;" loading="lazy"/>
-            </div>
+    <section class="svc-row svc-row--alt">
+        <div class="svc-row-inner svc-row-inner--flip" data-reveal-group>
             <div class="svc-row-content" data-reveal>
                 <p class="eyebrow">Neurotoxin</p>
                 <h2>Botox</h2>
                 <p>Natural-looking results that soften fine lines and refresh your appearance. Administered by a
                     licensed practitioner with a careful eye for balance and harmony.</p>
                 <div class="svc-row-actions">
-                    <a href="botox-filler.html" class="services-cta-btn" aria-label="Learn more about Botox">Learn More</a>
+                    <a href="botox-filler.html" class="services-cta-btn" aria-label="Learn more about Botox">Learn
+                        More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/#/discipline/1" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Botox consultation">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Botox consultation">Book
+                        Now</a>
                 </div>
+            </div>
+            <div class="svc-row-media" data-reveal>
+                <img src="images/botox.webp" alt="Botox at Springbok Medical Spa" class="svc-media-image"
+                    style="object-position: 50% 100%;" loading="lazy" />
             </div>
         </div>
     </section>
 
 
     <!-- ================= FILLER ================= -->
-    <section class="svc-row svc-row--alt">
-        <div class="svc-row-inner svc-row-inner--flip" data-reveal-group>
+    <section class="svc-row">
+        <div class="svc-row-inner" data-reveal-group>
+            <div class="svc-row-media" data-reveal>
+                <img src="images/filler2.webp" alt="Filler at Springbok Medical Spa" class="svc-media-image"
+                    loading="lazy" />
+            </div>
             <div class="svc-row-content" data-reveal>
                 <p class="eyebrow">Dermal Filler</p>
                 <h2>Filler</h2>
                 <p>Restore volume and refine contour with precision hyaluronic acid treatments tailored to your facial
                     anatomy. Subtle, natural enhancement that moves with you.</p>
                 <div class="svc-row-actions">
-                    <a href="botox-filler.html" class="services-cta-btn" aria-label="Learn more about Dermal Filler">Learn More</a>
+                    <a href="botox-filler.html" class="services-cta-btn"
+                        aria-label="Learn more about Dermal Filler">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/#/discipline/7" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Dermal Filler consultation">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline"
+                        aria-label="Book a Dermal Filler consultation">Book Now</a>
                 </div>
-            </div>
-            <div class="svc-row-media" data-reveal>
-                <img src="images/filler2.webp" alt="Filler at Springbok Medical Spa" class="svc-media-image" loading="lazy"/>
             </div>
         </div>
     </section>
 
 
     <!-- ================= MORPHEUS8 ================= -->
-    <section class="svc-row">
-        <div class="svc-row-inner" data-reveal-group>
-            <div class="svc-row-media" data-reveal>
-                <img src="images/morph8.webp" alt="Morpheus8 at Springbok Medical Spa" class="svc-media-image" loading="lazy"/>
-
-            </div>
+    <section class="svc-row svc-row--alt">
+        <div class="svc-row-inner svc-row-inner--flip" data-reveal-group>
             <div class="svc-row-content" data-reveal>
                 <p class="eyebrow">RF Microneedling</p>
                 <h2>Morpheus 8</h2>
                 <p>Advanced skin tightening and rejuvenation using radiofrequency microneedling. Stimulate deep collagen
                     remodelling for lasting, natural-looking results with minimal downtime.</p>
                 <div class="svc-row-actions">
-                    <a href="morpheus8.html" class="services-cta-btn" aria-label="Learn more about Morpheus8 RF Microneedling">Learn More</a>
+                    <a href="morpheus8.html" class="services-cta-btn"
+                        aria-label="Learn more about Morpheus8 RF Microneedling">Learn More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Morpheus8 consultation">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline"
+                        aria-label="Book a Morpheus8 consultation">Book Now</a>
                 </div>
+            </div>
+            <div class="svc-row-media" data-reveal>
+                <img src="images/morph8.webp" alt="Morpheus8 at Springbok Medical Spa" class="svc-media-image"
+                    loading="lazy" />
             </div>
         </div>
     </section>
 
 
     <!-- ================= LASER ================= -->
-    <section class="svc-row svc-row--alt">
-        <div class="svc-row-inner svc-row-inner--flip" data-reveal-group>
+    <section class="svc-row">
+        <div class="svc-row-inner" data-reveal-group>
+            <div class="svc-row-media" data-reveal>
+                <img src="images/laser.webp" alt="Laser Treatments at Springbok Medical Spa" class="svc-media-image"
+                    style="object-position: 50% 80%;" loading="lazy" />
+            </div>
             <div class="svc-row-content" data-reveal>
                 <p class="eyebrow">Laser Therapy</p>
                 <h2>Laser Treatments</h2>
                 <p>Precision treatments for pigmentation, resurfacing, and skin clarity. Each protocol is tailored to
                     your skin type and concerns for safe, effective results.</p>
                 <div class="svc-row-actions">
-                    <a href="laser.html" class="services-cta-btn" aria-label="Learn more about Laser Treatments">Learn More</a>
+                    <a href="laser.html" class="services-cta-btn" aria-label="Learn more about Laser Treatments">Learn
+                        More</a>
                     <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
-                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Laser Treatment appointment">Book Now</a>
+                        class="services-cta-btn services-cta-btn--outline"
+                        aria-label="Book a Laser Treatment appointment">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ACUPUNCTURE ================= -->
+    <section class="svc-row svc-row--alt">
+        <div class="svc-row-inner svc-row-inner--flip" data-reveal-group>
+            <div class="svc-row-content" data-reveal>
+                <p class="eyebrow">Traditional Wellness</p>
+                <h2>Acupuncture</h2>
+                <p>Restore balance from the inside out with personalized acupuncture treatments designed to support
+                    stress relief, pain management, hormonal balance, energy, sleep, and overall wellbeing through a holistic,
+                    root-cause approach.</p>
+                <div class="svc-row-actions">
+                    <a href="cupping-acupuncture.html" class="services-cta-btn"
+                        aria-label="Learn more about Acupuncture">Learn More</a>
+                    <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
+                        class="services-cta-btn services-cta-btn--outline"
+                        aria-label="Book an Acupuncture consultation">Book Now</a>
                 </div>
             </div>
             <div class="svc-row-media" data-reveal>
-                <img src="images/laser.webp" alt="Laser Treatments at Springbok Medical Spa" class="svc-media-image" style="object-position: 50% 80%;" loading="lazy"/>
+                <img src="images/naturopath.webp" alt="Acupuncture at Springbok Medical Spa" class="svc-media-image"
+                    style="object-position: 50% 50%;" loading="lazy" />
+            </div>
+        </div>
+    </section>
 
+
+    <!-- ================= CUPPING ================= -->
+    <section class="svc-row">
+        <div class="svc-row-inner" data-reveal-group>
+            <div class="svc-row-media" data-reveal>
+                <img src="images/cupping.jpg" alt="Cupping therapy at Springbok Medical Spa" class="svc-media-image"
+                    loading="lazy" />
+            </div>
+            <div class="svc-row-content" data-reveal>
+                <p class="eyebrow">Therapeutic Recovery</p>
+                <h2>Cupping</h2>
+                <p>Target tension, improve circulation, and support recovery with therapeutic cupping treatments. Often
+                    used alongside acupuncture, cupping can help reduce muscle tightness, promote relaxation, and
+                    encourage the body’s natural healing response.</p>
+                <div class="svc-row-actions">
+                    <a href="cupping-acupuncture.html" class="services-cta-btn"
+                        aria-label="Learn more about Cupping">Learn More</a>
+                    <a href="https://springbokmedicalspa.janeapp.com/" target="_blank" rel="noopener"
+                        class="services-cta-btn services-cta-btn--outline" aria-label="Book a Cupping consultation">Book
+                        Now</a>
+                </div>
             </div>
         </div>
     </section>
