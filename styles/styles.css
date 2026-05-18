@@ -334,7 +334,7 @@ h3 {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: url("/images/rock1.1.jpg") center/cover no-repeat;
+    background: url("/images/rock.webp") center/cover no-repeat;
     z-index: 0;
 }
 
