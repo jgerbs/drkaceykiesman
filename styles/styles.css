@@ -263,17 +263,54 @@ h3 {
     }
 
     .main-nav {
-        gap: 14px;
+        gap: 10px;
         flex-wrap: nowrap;
     }
 
     .main-nav a {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
     }
 
     .nav-book {
-        padding: 6px 12px;
-        font-size: 0.68rem !important;
+        padding: 6px 10px;
+        font-size: 0.66rem !important;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 403px) {
+    .main-nav {
+        gap: 8px;
+    }
+
+    .main-nav a {
+        font-size: 0.68rem;
+    }
+
+    .nav-book {
+        padding: 5px 8px;
+        font-size: 0.62rem !important;
+    }
+}
+
+@media (max-width: 381px) {
+    .main-nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .main-nav a {
+        font-size: 0.7rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .nav-book {
+        padding: 6px 10px;
+        font-size: 0.66rem !important;
+        justify-self: center;
         white-space: nowrap;
     }
 }
@@ -977,9 +1014,9 @@ h3 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 370px) {
     .footer-pill {
-        font-size: 0.66rem;
+        font-size: 0.64rem;
         letter-spacing: 0.01em;
         padding: 5px 6px;
     }
@@ -2090,7 +2127,7 @@ h3 {
     justify-content: center;
 }
 
-.morph-option-group[open] .morph-option-toggle {
+.morph-option-group[open] > summary .morph-option-toggle {
     transform: rotate(45deg);
     color: #b94040;
 }
@@ -2104,6 +2141,35 @@ h3 {
 .morph-option-body .injectables-grid {
     grid-template-columns: 1fr 1fr;
     width: 100%;
+}
+
+/* Nested sub-accordions — boxed inside parent body */
+.morph-option-body > .morph-option-group {
+    background: var(--ivory);
+    border-radius: 10px;
+    border: 1px solid var(--beige);
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.morph-option-body > .morph-option-group:last-child {
+    margin-bottom: 0;
+}
+
+.morph-option-body > .morph-option-group .morph-option-summary {
+    padding: 18px 20px;
+}
+
+.morph-option-body > .morph-option-group .morph-option-summary h3 {
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+}
+
+.morph-option-body > .morph-option-group .morph-option-badge {
+    background: var(--beige);
+}
+
+.morph-option-body > .morph-option-group .morph-option-body {
+    padding: 0 20px 20px;
 }
 
 @media (max-width: 500px) {
@@ -2135,7 +2201,7 @@ h3 {
    ============================================================ */
 
 /* --- Tablet: 960px --- */
-@media (max-width: 960px) {
+@media (max-width: 820px) {
 
     .site-header {
         padding: 18px 24px;
@@ -2149,7 +2215,7 @@ h3 {
     }
 
     .main-nav {
-        gap: 20px;
+        gap: 14px;
         flex-wrap: wrap;
         justify-content: center;
     }
