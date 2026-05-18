@@ -933,7 +933,7 @@ h3 {
 }
 
 .footer-contact a:hover {
-    color: var(--cream);
+    color: rgba(255, 255, 255, 0.363);
 }
 
 /* Quick booking pills */
@@ -1001,7 +1001,7 @@ h3 {
 }
 
 .footer-nav a:hover {
-    color: var(--cream);
+    color: rgba(255, 255, 255, 0.363);
 }
 
 /* Bottom bar */
@@ -1756,6 +1756,7 @@ h3 {
 
 .faq-item[open] summary::after {
     transform: rotate(45deg);
+    color: #b94040;
 }
 
 .faq-item p {
@@ -2091,6 +2092,7 @@ h3 {
 
 .morph-option-group[open] .morph-option-toggle {
     transform: rotate(45deg);
+    color: #b94040;
 }
 
 .morph-option-body {
