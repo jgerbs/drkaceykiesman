@@ -1180,22 +1180,29 @@ h3 {
     text-transform: uppercase;
     padding: 13px 32px;
     border-radius: 999px;
-    transition: background 0.2s, color 0.2s;
+    border: 1px solid transparent;
+    transition: background 0.22s var(--ease), color 0.22s var(--ease), border-color 0.22s var(--ease), box-shadow 0.22s var(--ease);
 }
 
 .hero-action-btn:hover {
-    background: var(--cream);
+    background: var(--brown);
+    color: var(--cream);
+    border-color: var(--ivory);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
 }
 
 .hero-action-btn--outline {
     background: transparent;
     border: 1px solid rgba(242, 237, 226, 0.45);
     color: rgba(242, 237, 226, 0.85);
+    transition: background 0.22s var(--ease), border-color 0.22s var(--ease), color 0.22s var(--ease), box-shadow 0.22s var(--ease);
 }
 
 .hero-action-btn--outline:hover {
-    background: rgba(242, 237, 226, 0.12);
-    color: var(--ivory);
+    background: var(--ivory);
+    border-color: var(--ivory);
+    color: var(--text-dark);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
 }
 
 
@@ -1309,6 +1316,11 @@ h3 {
     opacity: 1;
 }
 
+.pricing-section-cta {
+    margin-top: 40px;
+    grid-column: 2;
+}
+
 @media (max-width: 760px) {
     .pricing-section-inner {
         grid-template-columns: 1fr;
@@ -1317,6 +1329,10 @@ h3 {
 
     .pricing-header {
         position: static;
+    }
+
+    .pricing-section-cta {
+        grid-column: 1;
     }
 }
 
@@ -1874,7 +1890,7 @@ h3 {
 }
 
 .service-cta-btn--outline:hover {
-    background: var(--brown);
+    background: var(--brown-light);
     color: var(--cream);
 }
 
