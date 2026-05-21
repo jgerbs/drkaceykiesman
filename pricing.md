@@ -40,11 +40,11 @@ An IV Eligibility Visit ($70, 20 min) is required for new patients before a firs
 
 ## IM Injections
 
-Intramuscular vitamin injections deliver targeted nutrients directly into the muscle for efficient absorption. An IM Eligibility Visit ($75, 30 min) is required for new patients before a first injection.
+Intramuscular vitamin injections deliver targeted nutrients directly into the muscle for efficient absorption. An IM Eligibility Visit ($70, 20 min) is required for new patients before a first injection.
 
 | Service | Details | Price |
 |---|---|---|
-| IM Eligibility Visit (new patients) | 30 min | $75 |
+| IM Eligibility Visit (new patients) | 20 min | $70 |
 | B12 Injection | 15 min | $40 |
 | B-Complex Injection | 15 min | $40 |
 | B12 / B-Complex Injection | 15 min | $55 |

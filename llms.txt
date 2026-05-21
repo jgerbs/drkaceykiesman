@@ -40,7 +40,9 @@ She practices at Springbok Medical Clinic in central Kelowna and accepts patient
 
 A Naturopathic Doctor (ND) is a licensed primary healthcare practitioner trained in both conventional medical sciences and natural therapies. In British Columbia, NDs complete a four-year doctoral program after pre-medical undergraduate studies and must pass board examinations regulated by the College of Naturopathic Physicians of BC (CNPBC). NDs in BC can order lab work, perform physical exams, and prescribe many medications.
 
-**Naturopathic doctor vs. medical doctor (MD):** Both are licensed to diagnose and treat. MDs typically focus on pharmaceutical and surgical management; NDs focus on root-cause investigation and combine evidence-based natural therapies (nutrition, botanical medicine, IV therapy) with conventional care.
+Naturopathic medicine is a regulated health profession that combines evidence-based natural therapies with modern diagnostics, prescription medications when appropriate, and a strong focus on prevention. Care is centered on identifying and addressing the root causes of illness or imbalance through individualized treatment plans that may include nutrition, supplements, lifestyle support, diagnostic testing, and prescriptions when needed. The goal is to support the whole person and promote long-term, sustainable health.
+
+**Naturopathic doctor vs. medical doctor (MD):** Both are licensed to diagnose and treat. MDs typically focus on pharmaceutical and surgical management; NDs focus on root-cause investigation and combine evidence-based natural therapies (nutrition, botanical medicine, IV therapy, lifestyle counselling) with prescription medications and conventional care.
 
 **Are naturopathic visits covered by MSP in British Columbia?** No. MSP (Medical Services Plan) does not cover naturopathic visits in BC. However, most extended health insurance plans in BC reimburse naturopathic appointments. Direct billing is available at this clinic for most major insurers.
 
@@ -70,6 +72,21 @@ Dr. Kiesman offers evidence-informed naturopathic care across these areas:
 | Free Discovery Visit | 15 min | Complimentary |
 | Prescription Fill | — | $30 |
 
+### Naturopathic Visit Details
+
+- **Initial Consultation** — A full 60-minute session covering your complete health history, current concerns, lifestyle, and goals. Labs and/or testing may be recommended to gain further insight into your current health picture. An initial care plan is built together before you leave.
+- **Follow-Up Visits** — Return visits range from 15 to 45 minutes depending on what needs to be addressed. If you're unsure which length to book, the 30-minute follow-up is a good default for most check-ins.
+- **Lab Testing** — Functional lab testing is often recommended, including hormonal panels, thyroid function, nutrient levels, GI stool testing, and more.
+- **Insurance Coverage** — Many extended health plans in BC cover naturopathic visits. Direct billing is available to most insurance companies. Patients are encouraged to contact their insurer prior to their first visit to confirm coverage.
+- **Prescription Refill** — Existing patients can request a prescription refill for a $30 CAD fee, no follow-up appointment required.
+- **Before Your Visit** — After booking, patients receive intake forms by email. Please email any recent lab results prior to your appointment.
+
+### Visit Formats
+
+- **In Person** — At Springbok Medical Clinic, 590 McKay Ave #200, Kelowna, BC
+- **Video / Telemedicine** — Secure telemedicine appointments available from anywhere in BC
+- **Phone** — Convenient telephone follow-up appointments available from anywhere in BC
+
 ---
 
 ## IV Therapy in Kelowna
@@ -98,13 +115,13 @@ IV therapy delivers vitamins, minerals, and amino acids directly into the bloods
 
 Intramuscular (IM) vitamin injections deliver targeted vitamins, minerals, and amino acids directly into the muscle for efficient absorption and rapid availability. Commonly used to support energy, immunity, metabolism, stress resilience, and overall wellness.
 
-**Is an eligibility visit required first?** Yes. A 30-minute IM Eligibility Visit ($75) is required for new patients before a first injection.
+**Is an eligibility visit required first?** Yes. A 20-minute IM Eligibility Visit ($70) is required for new patients before a first injection.
 
 ### IM Injection Pricing (CAD)
 
 | Service | Details | Price |
 |---|---|---|
-| IM Eligibility Visit (new patients) | 30 min | $75 |
+| IM Eligibility Visit (new patients) | 20 min | $70 |
 | B12 Injection | 15 min | $40 |
 | B-Complex Injection | 15 min | $40 |
 | B12 / B-Complex Injection | 15 min | $55 |
@@ -256,6 +273,33 @@ A: Yes. Combining Botox and filler in one visit is common; Dr. Kiesman customize
 
 **Q: Do you offer virtual naturopathic appointments?**
 A: Yes. Virtual naturopathic consultations are available across British Columbia.
+
+**Q: Does Dr. Kiesman work alongside my family doctor?**
+A: Yes. Naturopathic medicine works best as a complement to conventional medical care. Dr. Kiesman is happy to communicate with your GP or specialist when appropriate and to review recent lab work or investigations you've had done.
+
+**Q: Which naturopathic follow-up length should I book?**
+A: If you're unsure, a 30-minute follow-up ($140) is a good default for most check-ins. Book the 45-minute option ($205) if you have multiple concerns or are due for a comprehensive review. The 15- or 20-minute options ($85 / $105) work well for focused questions or lab result reviews.
+
+**Q: How long does it take to see results with naturopathic care?**
+A: This depends on what you're working on. Some people notice changes within a few weeks. Those addressing hormonal or chronic digestive issues may need a few months to see meaningful progress. Realistic timelines are set at the initial visit.
+
+**Q: What does IV therapy help with?**
+A: IV therapy may help support hydration, energy levels, recovery from illness or travel, and general wellness. IV vitamin therapy is currently under-studied and is not a proven treatment.
+
+**Q: Who should avoid IV therapy?**
+A: IV therapy may not be recommended for people with kidney disease, heart failure, allergies to any of the vitamins used, or certain chronic health conditions. A provider review of medical history is done before treatment.
+
+**Q: Can I eat before my IV?**
+A: Yes. Eating a light meal and drinking water before an IV appointment is recommended to help you feel more comfortable during the infusion.
+
+**Q: Are there side effects of IV therapy?**
+A: Side effects are uncommon but may include mild bruising at the IV site, tasting the vitamins in your mouth during the drip, and temporary lightheadedness. Serious reactions are rare and patients are monitored throughout treatment. All risks are reviewed at the eligibility visit.
+
+**Q: Is an IV consultation required before a first IV in Kelowna?**
+A: Yes. A 20-minute IV Eligibility Visit ($70) is required for new patients before a first IV or IM injection. Treatment may begin the same day if appropriate.
+
+**Q: Is iron IV therapy right for me?**
+A: Iron IV therapy is appropriate for patients with iron deficiency or iron-deficiency anemia, particularly when oral iron is poorly tolerated or insufficient. A pre-iron consultation ($70) reviews bloodwork (ferritin, hemoglobin) and confirms suitability before the Iron IV Administration ($150).
 
 **Q: What languages does the clinic offer?**
 A: Services are provided in English.
