@@ -1,6 +1,9 @@
 # Pricing — Dr. Kacey Kiesman ND | Kelowna, BC
 
-All prices in Canadian dollars. Subject to change — confirm current rates at drkaceykiesman.com/pricing.html or by calling (778) 940-9811.
+**Last updated:** 2026-05-20
+**Currency:** Canadian dollars (CAD)
+**Confirm current rates:** https://drkaceykiesman.com/pricing.html or (778) 940-9811
+**Book:** https://springbokmedicalspa.janeapp.com/
 
 ---
 
@@ -46,11 +49,24 @@ Private pay. Not covered by MSP or insurance.
 
 | Service | Details | Price |
 |---|---|---|
-| Botox | Neurotoxin, per unit | $10/unit |
+| Botox / Neuromodulators | Per unit | $10/unit |
 | Dermal Filler | Per syringe | $600/syringe |
+| Morpheus8 BURST Microneedling | Per session, varies by area | $800–$1,500 |
 | Morpheus8 Resurfacing | Per session | $700–$900 |
-| Morpheus8 Microneedling | Per session | $800–$1,500 |
-| Laser Treatment (DiolazeXL) | Per session, varies by area | $60–$400 |
+| Lumecca Peak IPL | Per session, varies by area | $100–$650 |
+| DiolazeXL Laser Hair Removal | Per session, varies by area | $60–$400 |
+
+### Multi-Session Packages (no expiry)
+
+| Package | Sessions | Price |
+|---|---|---|
+| Morpheus8 BURST — Face | 3 | $2,125 |
+| Morpheus8 BURST — Face & Neck | 3 | $2,500 |
+| Morpheus8 BURST — Face, Neck & Chest | 3 | $3,750 |
+| Morpheus8 BURST — Upper Arms | 3 | $2,125 |
+| Morpheus8 BURST — Underarms (Hyperhidrosis) | 3 | $2,200 |
+| Tight & Bright (Morpheus8 + Lumecca IPL combo) | 3 | $2,000 |
+| DP4 Microneedling SkinPen | 4 | $1,200 |
 
 ---
 

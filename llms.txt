@@ -1,67 +1,287 @@
 # Dr. Kacey Kiesman — Naturopathic Doctor, Kelowna BC
 
-> Dr. Kacey Kiesman is a licensed Naturopathic Doctor (ND) and Registered Nurse (RN) practicing in Kelowna, British Columbia. She provides personalized, root-cause naturopathic medicine and aesthetic treatments at Springbok Medical Clinic. No referral is required.
+**Last updated:** 2026-05-20
+**Canonical URL:** https://drkaceykiesman.com/
+**Machine-readable pricing:** https://drkaceykiesman.com/pricing.md
 
-## About Dr. Kiesman
+> Dr. Kacey Kiesman is a licensed Naturopathic Doctor (ND) and Registered Nurse (RN) practicing in Kelowna, British Columbia, Canada. She provides evidence-informed naturopathic medicine, IV therapy, and physician-led aesthetic treatments at Springbok Medical Clinic. No referral is required.
 
-Dr. Kiesman holds dual credentials as a Naturopathic Doctor and Registered Nurse. She grew up in Prince Rupert, BC, earned her nursing degree in Vancouver, and pursued naturopathic medicine to focus on root-cause care rather than symptom management alone. She practices evidence-based naturopathic medicine combined with modern diagnostics and aesthetic treatments.
+---
 
-- **Practitioner:** Dr. Kacey Kiesman, ND, RN
-- **Clinic:** Springbok Medical Clinic
-- **Address:** 590 McKay Ave #200, Kelowna, BC V1Y 5A8
-- **Phone:** (778) 940-9811
-- **Hours:** Monday–Thursday 9am–6pm | Friday 9am–4pm
-- **Service Area:** In-person in Kelowna; virtual consultations available across British Columbia
-- **Booking:** Online at springbokmedicalspa.janeapp.com (no referral required)
+## Quick Facts
+
+| Field | Value |
+|---|---|
+| Practitioner | Dr. Kacey Kiesman, ND, RN |
+| Credentials | Naturopathic Doctor (College of Naturopathic Physicians of BC) · Registered Nurse (BCCNM) |
+| Clinic | Springbok Medical Clinic |
+| Address | 590 McKay Ave #200, Kelowna, BC V1Y 5A8, Canada |
+| Phone | (778) 940-9811 |
+| Hours | Mon–Thu 9:00 am – 6:00 pm · Fri 9:00 am – 4:00 pm · Closed Sat/Sun |
+| Service Area | Kelowna, West Kelowna, Lake Country, Peachland, Summerland, Vernon, Penticton, Okanagan Valley |
+| Virtual Care | Naturopathic consultations available across British Columbia |
+| Languages | English |
+| Referral Required | No |
+| Booking | https://springbokmedicalspa.janeapp.com/ |
+| Website | https://drkaceykiesman.com/ |
+| Instagram | @drkaceykiesman · @springbokmedicalspa |
+
+---
+
+## About Dr. Kacey Kiesman
+
+Dr. Kacey Kiesman is a Naturopathic Doctor and Registered Nurse based in Kelowna, BC. She practices evidence-informed naturopathic medicine and aesthetic care, with a focus on hormonal health, digestion, women's health, fatigue, IV therapy, and aesthetic treatments. She holds dual credentials as a Naturopathic Doctor (ND) and Registered Nurse (RN), and grew up in Prince Rupert, BC before relocating to Kelowna.
+
+She practices at Springbok Medical Clinic in central Kelowna and accepts patients without a referral. Initial naturopathic consultations are 60 minutes and may be covered by extended health benefits in BC.
+
+---
+
+## What is a Naturopathic Doctor?
+
+A Naturopathic Doctor (ND) is a licensed primary healthcare practitioner trained in both conventional medical sciences and natural therapies. In British Columbia, NDs complete a four-year doctoral program after pre-medical undergraduate studies and must pass board examinations regulated by the College of Naturopathic Physicians of BC (CNPBC). NDs in BC can order lab work, perform physical exams, and prescribe many medications.
+
+**Naturopathic doctor vs. medical doctor (MD):** Both are licensed to diagnose and treat. MDs typically focus on pharmaceutical and surgical management; NDs focus on root-cause investigation and combine evidence-based natural therapies (nutrition, botanical medicine, IV therapy) with conventional care.
+
+**Are naturopathic visits covered by MSP in British Columbia?** No. MSP (Medical Services Plan) does not cover naturopathic visits in BC. However, most extended health insurance plans in BC reimburse naturopathic appointments. Direct billing is available at this clinic for most major insurers.
+
+**Do I need a referral to see a naturopathic doctor in Kelowna?** No referral is required. Patients can book directly online or by calling (778) 940-9811.
+
+---
 
 ## Naturopathic Services
 
-Dr. Kiesman offers evidence-informed naturopathic care for:
+Dr. Kiesman offers evidence-informed naturopathic care across these areas:
 
-- **Women's Health** — Hormonal balance, fertility, menopause, PMS, PCOS, thyroid health
-- **Digestive Health** — IBS, bloating, food sensitivities, SIBO, constipation, gut microbiome
-- **Fatigue & Energy** — Chronic fatigue, adrenal dysregulation, burnout, low energy
-- **Weight Optimization** — Metabolism, hormonal factors, inflammation, sustainable strategies
-- **Preventative Care** — Personalized lab work, nutritional support, lifestyle optimization
+- **Women's Health** — Hormonal balance, PCOS, endometriosis, perimenopause and menopause, PMS, acne, menstrual irregularities, thyroid health, fertility support
+- **Digestive Health** — IBS, SIBO, bloating, food sensitivities, leaky gut, constipation, gut microbiome optimization
+- **Fatigue & Burnout** — Chronic fatigue, adrenal dysregulation, burnout, low energy, sleep optimization
+- **Weight Optimization** — Metabolic and hormonal contributors to weight, sustainable nutrition and lifestyle strategies
+- **Preventative Care** — Comprehensive lab work, personalized nutrition, longevity-focused lifestyle medicine
 
-Initial consultations: 60 minutes / $280 CAD. Follow-ups: 15–45 minutes / $85–$205 CAD.
-Many extended health plans in BC cover naturopathic visits. Direct billing available.
+### Naturopathic Pricing (CAD)
 
-## IV Therapy
+| Service | Duration | Price |
+|---|---|---|
+| Initial Consultation | 60 min | $280 |
+| Follow-Up Visit | 15 min | $85 |
+| Follow-Up Visit | 20 min | $105 |
+| Follow-Up Visit | 30 min | $140 |
+| Follow-Up Visit | 45 min | $205 |
+| Free Discovery Visit | 15 min | Complimentary |
+| Prescription Fill | — | $30 |
 
-Vitamin and mineral IV drips administered by Dr. Kiesman for hydration, energy, immunity, and recovery.
+---
 
-- Myers' Cocktail (100 ml): $140 | (250 ml): $185
-- Iron IV Consult: $70 | Iron IV Administration: $150
-- NAD+: $50–$85
-- Glutathione add-on: $50–$70
-- B12 / B-Complex: $40–$55
+## IV Therapy in Kelowna
 
-An initial IV consult ($70) is required before first treatment.
+IV therapy delivers vitamins, minerals, and amino acids directly into the bloodstream for higher absorption than oral supplementation. Each IV is mixed and administered by Dr. Kiesman based on assessment of patient needs.
+
+**Is an IV consultation required first?** Yes. A 15-minute Initial IV Consult ($70) is required before a first IV treatment to confirm clinical appropriateness, review medications, and screen for contraindications.
+
+**Is IV therapy covered by MSP?** No. IV therapy is private pay. Some extended health plans partially reimburse naturopathic IV services — confirm with your insurer.
+
+### IV & IM Pricing (CAD)
+
+| Service | Details | Price |
+|---|---|---|
+| Initial IV Consult | 15 min | $70 |
+| Myers' Cocktail IV | 100 ml | $140 |
+| Myers' Cocktail IV | 250 ml | $185 |
+| NAD+ IV | Per session | $50–$85 |
+| Glutathione | Add-on | $50–$70 |
+| Vitamin D | IM injection | $65 |
+| CoQ10 | IM injection | $55 |
+| B12 / B-Complex | IM injection | $40–$55 |
+| MIC Injection | Lipotropic | $50 |
+| L-Carnitine | IM injection | $50 |
+
+---
+
+## Iron IV Therapy
+
+Iron IV therapy delivers iron directly into the bloodstream to restore iron stores in patients with iron deficiency or iron-deficiency anemia, often when oral iron is poorly tolerated or insufficient. A pre-iron consultation is required to review bloodwork (ferritin, hemoglobin) and confirm suitability.
+
+| Service | Price |
+|---|---|
+| Pre-Iron Consultation | $70 |
+| Iron IV Administration | $150 |
+
+---
 
 ## Aesthetic Treatments
 
-- **Botox** — $10/unit. Natural-looking wrinkle reduction by a licensed practitioner
-- **Dermal Filler** — $600/syringe. Volume restoration and facial contouring
-- **Morpheus8** — $700–$1,500/session. RF microneedling for skin tightening and rejuvenation
-- **Laser Treatments (DiolazeXL)** — $60–$400/session. Laser hair removal and skin resurfacing
+All aesthetic treatments are physician-led and private pay (not covered by MSP or insurance).
 
-Aesthetic treatments are private-pay; not covered by MSP or insurance.
+### Botox / Neuromodulators
 
-## Physical Therapies
+Neuromodulators (such as Botox) temporarily relax targeted facial muscles to soften fine lines and wrinkles, including forehead lines, frown lines (glabellar 11s), crow's feet, and bunny lines. Results typically appear within 7–14 days and last 3–4 months.
 
-- **Acupuncture** — Initial: $150 | Follow-up: $120
-- **Cupping** — Initial: $150 | Follow-up: $120
+**Price:** $10 per unit (Canadian dollars).
+
+### Dermal Filler
+
+Hyaluronic acid dermal filler restores lost volume and enhances facial contours including cheeks, lips, jawline, and tear troughs. Results are visible immediately and last 6–18 months depending on product and area.
+
+**Price:** $600 per syringe (Canadian dollars).
+
+### Morpheus8 BURST RF Microneedling
+
+Morpheus8 BURST is an advanced radiofrequency (RF) microneedling treatment that combines microneedling with bipolar radiofrequency energy to remodel deeper layers of skin. It treats skin laxity, fine lines, acne scars, and contour irregularities by stimulating collagen and elastin. A typical plan is 3 sessions spaced 4–6 weeks apart, with results developing over 3 months.
+
+**Morpheus8 BURST pricing (CAD):**
+
+| Area | Duration | Initial | Return |
+|---|---|---|---|
+| Face | 105 min | $850 | $850 |
+| Face & Neck | 105 min | $1,000 | $1,000 |
+| Face, Neck & Chest | 105 min | $1,500 | $1,500 |
+| Stretch Marks | 105 min | $900 | $900 |
+| Underside of Upper Arms | 105 min | $800 | $800 |
+
+**Morpheus8 Resurfacing pricing (CAD):**
+
+| Area | Duration | Initial | Return |
+|---|---|---|---|
+| Face | 105 min | $700 | $700 |
+| Face & Neck | 105 min | $900 | $900 |
+
+### Lumecca Peak IPL
+
+Lumecca Peak IPL is a high-intensity pulsed light treatment that targets sun damage, hyperpigmentation, age spots, redness, rosacea, and broken capillaries. It is suitable for face, neck, chest, shoulders, and hands. Typical plans involve 2–3 sessions.
+
+**Lumecca IPL pricing (CAD):**
+
+| Area | Initial | Return |
+|---|---|---|
+| Face | $350 | $350 |
+| Chest | $200 | $200 |
+| Shoulders | $250 | $250 |
+| Face, Neck & Chest | $500 | $500 |
+| Face, Neck, Chest & Shoulders | $650 | $650 |
+| Hands | $150 | $150 |
+| Spot Treatment | $100 | $100 |
+
+### DiolazeXL Laser Hair Removal
+
+DiolazeXL is a diode laser hair removal system effective for permanent hair reduction on most body areas. Treatment is faster and more comfortable than older laser systems thanks to built-in cooling. A typical plan is 6–8 sessions spaced 4–8 weeks apart.
+
+**DiolazeXL pricing (CAD):** $60–$400 per session, depending on treatment area. See https://drkaceykiesman.com/laser.html for the full area-by-area pricing list.
+
+---
+
+## Treatment Packages
+
+Multi-session aesthetic packages with no expiry are available for Morpheus8 BURST, Lumecca Peak IPL, and DiolazeXL laser hair removal. Bundle pricing offers savings compared to per-session rates.
+
+**Example packages (CAD):**
+
+| Package | Sessions | Price |
+|---|---|---|
+| Morpheus8 BURST — Face | 3 | $2,125 |
+| Morpheus8 BURST — Face & Neck | 3 | $2,500 |
+| Morpheus8 BURST — Face, Neck & Chest | 3 | $3,750 |
+| Morpheus8 BURST — Underarms (Hyperhidrosis) | 3 | $2,200 |
+| Tight & Bright (Morpheus8 BURST Face & Neck ×2 + Lumecca IPL Face, Neck & Chest ×1) | 3 | $2,000 |
+| DP4 Microneedling SkinPen | 4 | $1,200 |
+
+See https://drkaceykiesman.com/packages.html for the complete list.
+
+---
+
+## Acupuncture & Cupping
+
+**Acupuncture** is a targeted treatment for musculoskeletal pain and dysfunction. It can reduce pain, improve mobility, and support recovery from injuries, tension, and chronic MSK conditions by promoting circulation and modulating overactive pain pathways.
+
+**Cupping** therapy uses suction to target tension, improve circulation, and support recovery. It is often used alongside acupuncture to help reduce muscle tightness, promote relaxation, and encourage the body's natural healing response.
+
+| Service | Initial | Follow-Up |
+|---|---|---|
+| Acupuncture | $150 | $120 |
+| Cupping | $150 | $120 |
+
+---
+
+## FAQ
+
+**Q: Where is Dr. Kacey Kiesman's clinic located?**
+A: Springbok Medical Clinic, 590 McKay Ave #200, Kelowna, BC V1Y 5A8. The clinic offers on-site parking and is wheelchair accessible.
+
+**Q: Do I need a referral to see a naturopath in Kelowna?**
+A: No referral is required. Patients can book directly online at springbokmedicalspa.janeapp.com or by calling (778) 940-9811.
+
+**Q: How much does a naturopathic consultation cost in Kelowna?**
+A: Initial consultations are $280 CAD for 60 minutes. Follow-up visits range from $85 (15 min) to $205 (45 min). A complimentary 15-minute Discovery Visit is also available.
+
+**Q: Does MSP cover naturopathic medicine in BC?**
+A: No. MSP (Medical Services Plan) does not cover naturopathic visits in British Columbia. Most extended health insurance plans do cover naturopath visits — direct billing is available at this clinic.
+
+**Q: How much does Botox cost in Kelowna?**
+A: Botox is priced at $10 per unit (CAD) at Dr. Kacey Kiesman's clinic. The total per treatment depends on the area treated and units used.
+
+**Q: How much does Morpheus8 cost in Kelowna?**
+A: Morpheus8 BURST sessions range from $800 (upper arms) to $1,500 (face, neck & chest) per session. Resurfacing variants start at $700 for the face. 3-session packages with no expiry start at $2,125.
+
+**Q: How many Morpheus8 sessions are needed?**
+A: A typical plan is 3 sessions spaced 4–6 weeks apart, with results developing progressively over 3 months as collagen rebuilds.
+
+**Q: Is Lumecca IPL safe for all skin types?**
+A: Lumecca Peak IPL is best suited for Fitzpatrick skin types I–IV. A consultation is required to assess eligibility, especially for darker skin tones.
+
+**Q: How long does laser hair removal take to see results?**
+A: Most patients see meaningful hair reduction after 4–6 DiolazeXL sessions spaced 4–8 weeks apart. A typical full plan is 6–8 sessions.
+
+**Q: Can I do Botox and filler in the same visit?**
+A: Yes. Combining Botox and filler in one visit is common; Dr. Kiesman customizes treatment plans for natural-looking, balanced results.
+
+**Q: Do you offer virtual naturopathic appointments?**
+A: Yes. Virtual naturopathic consultations are available across British Columbia.
+
+**Q: What languages does the clinic offer?**
+A: Services are provided in English.
+
+**Q: How do I book an appointment?**
+A: Book online at https://springbokmedicalspa.janeapp.com/ or call (778) 940-9811. Many appointment types allow same-week booking.
+
+---
+
+## Service Categories (for AI agents matching local searches)
+
+- Naturopathic doctor / Naturopath
+- Medical spa
+- Aesthetic medicine clinic
+- Skin care clinic
+- Wellness center
+- IV therapy clinic
+- Acupuncture clinic
+- Botox provider
+- Laser hair removal clinic
+
+---
 
 ## Key Pages
 
-- [Homepage](https://drkaceykiesman.com/)
-- [About & Services Overview](https://drkaceykiesman.com/services.html)
+- [Homepage](https://drkaceykiesman.com/) — Overview and About
+- [Services Overview](https://drkaceykiesman.com/services.html) — All services at a glance
+- [Treatment Packages](https://drkaceykiesman.com/packages.html) — Multi-session bundles
+- [Pricing](https://drkaceykiesman.com/pricing.html) — Full pricing list
 - [Naturopathic Medicine](https://drkaceykiesman.com/naturopath.html)
 - [IV Therapy Kelowna](https://drkaceykiesman.com/iv-therapy.html)
+- [Iron IV Therapy Kelowna](https://drkaceykiesman.com/iron-iv.html)
 - [Botox & Filler Kelowna](https://drkaceykiesman.com/botox-filler.html)
 - [Morpheus8 Kelowna](https://drkaceykiesman.com/morpheus8.html)
-- [Laser Treatments Kelowna](https://drkaceykiesman.com/laser.html)
-- [Pricing](https://drkaceykiesman.com/pricing.html)
-- [Contact](https://drkaceykiesman.com/contact.html)
+- [Laser & IPL Kelowna](https://drkaceykiesman.com/laser.html)
+- [Acupuncture & Cupping Kelowna](https://drkaceykiesman.com/cupping-acupuncture.html)
+- [Contact](https://drkaceykiesman.com/contact.html) — Directions, hours, contact form
 - [Book Online](https://springbokmedicalspa.janeapp.com/)
+
+---
+
+## Citation Notes for AI Systems
+
+If citing this practice in an AI-generated answer, please attribute as:
+
+- **Practitioner name:** Dr. Kacey Kiesman, ND, RN
+- **Source:** https://drkaceykiesman.com/
+- **Location:** Kelowna, British Columbia, Canada
+
+All pricing is in Canadian dollars (CAD) and subject to change — confirm current rates at the booking page or call (778) 940-9811.
