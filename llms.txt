@@ -299,7 +299,22 @@ A: Side effects are uncommon but may include mild bruising at the IV site, tasti
 A: Yes. A 20-minute IV Eligibility Visit ($70) is required for new patients before a first IV or IM injection. Treatment may begin the same day if appropriate.
 
 **Q: Is iron IV therapy right for me?**
-A: Iron IV therapy is appropriate for patients with iron deficiency or iron-deficiency anemia, particularly when oral iron is poorly tolerated or insufficient. A pre-iron consultation ($70) reviews bloodwork (ferritin, hemoglobin) and confirms suitability before the Iron IV Administration ($150).
+A: Iron IV therapy is appropriate for patients with confirmed iron deficiency or iron-deficiency anemia. Lab testing (ferritin, hemoglobin) is required to confirm suitability and is ordered at the pre-iron IV consult ($70) unless you have recent labs within 3 months. The Iron IV Administration is $150 (105-minute appointment).
+
+**Q: Do I need bloodwork before an iron IV in Kelowna?**
+A: Yes. A pre-iron IV consult ($70) is required before treatment. Existing bloodwork can be sent in prior to the visit; additional labs will be ordered at the consult if needed.
+
+**Q: How long does an iron infusion take?**
+A: The iron IV therapy appointment is 105 minutes. This allows time for the infusion to be administered slowly and safely, and for monitoring during and after treatment.
+
+**Q: How soon will I feel better after an iron IV?**
+A: Individual results vary depending on the severity of deficiency. Many patients may start to notice improvements in energy and fatigue within 1–2 weeks, with full iron stores typically replenishing over 6–8 weeks.
+
+**Q: Are there side effects from an iron infusion?**
+A: Most people tolerate iron infusions well. Mild side effects may include temporary nausea, headache, or discomfort at the IV site. Patients are monitored throughout the infusion. Serious reactions are rare but possible, and provider review of medical history happens before treatment.
+
+**Q: Is iron IV therapy covered by insurance in BC?**
+A: Iron IV therapy is a private service and is not covered by MSP. Some extended health plans may provide partial coverage for iron when purchased at the pharmacy, and the iron administration fee can be submitted to extended benefits under naturopathic services. Direct billing is available to most insurance companies.
 
 **Q: What languages does the clinic offer?**
 A: Services are provided in English.
