@@ -1,6 +1,6 @@
 # Pricing — Dr. Kacey Kiesman ND | Kelowna, BC
 
-**Last updated:** 2026-05-20
+**Last updated:** 2026-05-21
 **Currency:** Canadian dollars (CAD)
 **Confirm current rates:** https://drkaceykiesman.com/pricing.html or (778) 940-9811
 **Book:** https://springbokmedicalspa.janeapp.com/
@@ -24,22 +24,37 @@ Many extended health plans in BC cover naturopathic visits. Direct billing avail
 
 ## IV Therapy
 
-An initial IV consult ($70, 15 min) is required before first treatment. Not covered by MSP.
+An IV Eligibility Visit ($70, 20 min) is required for new patients before a first IV treatment. Direct billing available to most insurers for select IV services. Not covered by MSP.
 
 | Service | Details | Price |
 |---|---|---|
-| IV Initial Consult | 15 min | $70 |
-| Myers' Cocktail IV | 100 ml | $140 |
-| Myers' Cocktail IV | 250 ml | $185 |
+| IV Eligibility Visit (new patients) | 20 min | $70 |
+| IV Vitamin Therapy | 100 ml · 45 min | $140 |
+| IV Vitamin Therapy | 250 ml · 60 min | $185 |
+| Glutathione IV | 45 min | $150 |
+| Glutathione Add-on | Add-on to other IVs | $50–$70 |
 | Iron IV Consult | — | $70 |
 | Iron IV Administration | — | $150 |
-| Glutathione | Add-on | $50–$70 |
-| B12 / B-Complex | — | $40–$55 |
-| Vitamin D | — | $65 |
-| CoQ10 | — | $55 |
-| MIC Injection | — | $50 |
-| L-Carnitine | — | $50 |
-| NAD+ | — | $50–$85 |
+
+---
+
+## IM Injections
+
+Intramuscular vitamin injections deliver targeted nutrients directly into the muscle for efficient absorption. An IM Eligibility Visit ($75, 30 min) is required for new patients before a first injection.
+
+| Service | Details | Price |
+|---|---|---|
+| IM Eligibility Visit (new patients) | 30 min | $75 |
+| B12 Injection | 15 min | $40 |
+| B-Complex Injection | 15 min | $40 |
+| B12 / B-Complex Injection | 15 min | $55 |
+| Vitamin D3 Injection (bloodwork required) | 15 min | $65 |
+| CoQ10 Injection | 15 min | $55 |
+| MIC Injection | 15 min | $50 |
+| L-Carnitine Injection | 15 min | $50 |
+| MIC / L-Carnitine Injection | 15 min | $65 |
+| NAD+ Injection (25 mg) | 15 min | $55 |
+| NAD+ Injection (50 mg) | 15 min | $85 |
 
 ---
 

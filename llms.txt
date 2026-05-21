@@ -1,6 +1,6 @@
 # Dr. Kacey Kiesman — Naturopathic Doctor, Kelowna BC
 
-**Last updated:** 2026-05-20
+**Last updated:** 2026-05-21
 **Canonical URL:** https://drkaceykiesman.com/
 **Machine-readable pricing:** https://drkaceykiesman.com/pricing.md
 
@@ -17,7 +17,7 @@
 | Clinic | Springbok Medical Clinic |
 | Address | 590 McKay Ave #200, Kelowna, BC V1Y 5A8, Canada |
 | Phone | (778) 940-9811 |
-| Hours | Mon–Thu 9:00 am – 6:00 pm · Fri 9:00 am – 4:00 pm · Closed Sat/Sun |
+| Hours | Mon–Thu 9:00 am – 5:00 pm · Fri 9:00 am – 2:00 pm · Closed Sat/Sun |
 | Service Area | Kelowna, West Kelowna, Lake Country, Peachland, Summerland, Vernon, Penticton, Okanagan Valley |
 | Virtual Care | Naturopathic consultations available across British Columbia |
 | Languages | English |
@@ -74,26 +74,47 @@ Dr. Kiesman offers evidence-informed naturopathic care across these areas:
 
 ## IV Therapy in Kelowna
 
-IV therapy delivers vitamins, minerals, and amino acids directly into the bloodstream for higher absorption than oral supplementation. Each IV is mixed and administered by Dr. Kiesman based on assessment of patient needs.
+IV therapy delivers vitamins, minerals, and amino acids directly into the bloodstream for higher absorption than oral supplementation. Each IV is mixed and administered by Dr. Kiesman based on assessment of patient needs. Direct billing to most insurance companies is available for select IV services.
 
-**Is an IV consultation required first?** Yes. A 15-minute Initial IV Consult ($70) is required before a first IV treatment to confirm clinical appropriateness, review medications, and screen for contraindications.
+**Is an IV consultation required first?** Yes. A 20-minute IV Eligibility Visit ($70) is required for new patients before a first IV treatment, to confirm clinical appropriateness, review medications, and screen for contraindications.
 
 **Is IV therapy covered by MSP?** No. IV therapy is private pay. Some extended health plans partially reimburse naturopathic IV services — confirm with your insurer.
 
-### IV & IM Pricing (CAD)
+### IV Therapy Pricing (CAD)
 
 | Service | Details | Price |
 |---|---|---|
-| Initial IV Consult | 15 min | $70 |
-| Myers' Cocktail IV | 100 ml | $140 |
-| Myers' Cocktail IV | 250 ml | $185 |
-| NAD+ IV | Per session | $50–$85 |
-| Glutathione | Add-on | $50–$70 |
-| Vitamin D | IM injection | $65 |
-| CoQ10 | IM injection | $55 |
-| B12 / B-Complex | IM injection | $40–$55 |
-| MIC Injection | Lipotropic | $50 |
-| L-Carnitine | IM injection | $50 |
+| IV Eligibility Visit (new patients) | 20 min | $70 |
+| IV Vitamin Therapy | 100 ml · 45 min | $140 |
+| IV Vitamin Therapy | 250 ml · 60 min | $185 |
+| Glutathione IV | 45 min | $150 |
+| Glutathione Add-on | Add-on to other IVs | $50–$70 |
+| Iron IV Consult | — | $70 |
+| Iron IV Administration | — | $150 |
+
+---
+
+## IM Injections in Kelowna
+
+Intramuscular (IM) vitamin injections deliver targeted vitamins, minerals, and amino acids directly into the muscle for efficient absorption and rapid availability. Commonly used to support energy, immunity, metabolism, stress resilience, and overall wellness.
+
+**Is an eligibility visit required first?** Yes. A 30-minute IM Eligibility Visit ($75) is required for new patients before a first injection.
+
+### IM Injection Pricing (CAD)
+
+| Service | Details | Price |
+|---|---|---|
+| IM Eligibility Visit (new patients) | 30 min | $75 |
+| B12 Injection | 15 min | $40 |
+| B-Complex Injection | 15 min | $40 |
+| B12 / B-Complex Injection | 15 min | $55 |
+| Vitamin D3 Injection (bloodwork required) | 15 min | $65 |
+| CoQ10 Injection | 15 min | $55 |
+| MIC Injection | 15 min | $50 |
+| L-Carnitine Injection | 15 min | $50 |
+| MIC / L-Carnitine Injection | 15 min | $65 |
+| NAD+ Injection (25 mg) | 15 min | $55 |
+| NAD+ Injection (50 mg) | 15 min | $85 |
 
 ---
 
