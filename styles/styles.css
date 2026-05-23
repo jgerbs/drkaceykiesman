@@ -775,6 +775,15 @@ h3 {
     padding: clamp(80px, 10vw, 160px) clamp(16px, 2vw, 32px);
 }
 
+.location.location--cream {
+    background: var(--cream);
+}
+
+/* When the location section is cream, flip the footer wave to cream too */
+.location.location--cream + .footer::before {
+    background-color: var(--cream);
+}
+
 .location-inner {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -1352,7 +1361,7 @@ h3 {
    ============================================================ */
 
 .contact-section {
-    background: var(--ivory);
+    background: var(--cream);
     padding: clamp(80px, 10vw, 130px) clamp(16px, 4vw, 64px);
 }
 
